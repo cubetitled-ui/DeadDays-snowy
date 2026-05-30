@@ -1,5 +1,5 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0u41s0abs2l8"]
+[gd_scene format=3 uid="uid://c0u41s0abs2l8"]
 
-[ext_resource type="PackedScene" uid="uid://kbmpvq74phhn" path="res://Models/landscape.glb" id="1_8vpcf"]
+[ext_resource type="PackedScene" uid="uid://dm0y4dlrmp2sy" path="res://Models/landscape.glb" id="1_8vpcf"]
 
-[node name="landscape" instance=ExtResource("1_8vpcf")]
+[node name="landscape" unique_id=1403704722 instance=ExtResource("1_8vpcf")]

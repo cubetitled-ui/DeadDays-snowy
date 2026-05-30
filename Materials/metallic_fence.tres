@@ -1,6 +1,6 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cbrgejpt0ggr2"]
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cbrgejpt0ggr2"]
 
-[ext_resource type="Texture2D" uid="uid://dmkhbhphkpu1k" path="res://Textures/fence_texture.png" id="1_grs7t"]
+[ext_resource type="Texture2D" uid="uid://bku51kcokk17f" path="res://Textures/fence_texture.png" id="1_grs7t"]
 
 [resource]
 transparency = 1

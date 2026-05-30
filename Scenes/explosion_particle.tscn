@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cbhp82gnhexjy"]
+[gd_scene format=3 uid="uid://cbhp82gnhexjy"]
 
 [ext_resource type="Script" uid="uid://brvhjfvf1sl73" path="res://Scenes/explosion_particle.gd" id="1_3lh5b"]
 
@@ -115,11 +115,11 @@ color = Color(0.860569, 0.568519, 0, 1)
 color_ramp = SubResource("GradientTexture1D_dqtwh")
 emission_curve = SubResource("CurveTexture_y6j0s")
 
-[node name="ExplosionParticle" type="Node3D"]
+[node name="ExplosionParticle" type="Node3D" unique_id=522209719]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 script = ExtResource("1_3lh5b")
 
-[node name="Debris" type="GPUParticles3D" parent="."]
+[node name="Debris" type="GPUParticles3D" parent="." unique_id=91654154]
 layers = 4
 emitting = false
 amount = 24
@@ -131,7 +131,7 @@ local_coords = true
 process_material = SubResource("ParticleProcessMaterial_4rgka")
 draw_pass_1 = SubResource("CylinderMesh_rb2sf")
 
-[node name="Smoke" type="GPUParticles3D" parent="."]
+[node name="Smoke" type="GPUParticles3D" parent="." unique_id=1233351210]
 layers = 4
 emitting = false
 amount = 12
@@ -142,7 +142,7 @@ local_coords = true
 process_material = SubResource("ParticleProcessMaterial_j37yk")
 draw_pass_1 = SubResource("BoxMesh_3l0i2")
 
-[node name="Fire" type="GPUParticles3D" parent="."]
+[node name="Fire" type="GPUParticles3D" parent="." unique_id=2096330882]
 layers = 4
 emitting = false
 amount = 12
@@ -152,4 +152,4 @@ local_coords = true
 process_material = SubResource("ParticleProcessMaterial_rnjdy")
 draw_pass_1 = SubResource("BoxMesh_3l0i2")
 
-[node name="ExplosionSound" type="AudioStreamPlayer3D" parent="."]
+[node name="ExplosionSound" type="AudioStreamPlayer3D" parent="." unique_id=287654474]

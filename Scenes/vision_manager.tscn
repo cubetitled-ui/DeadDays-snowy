@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://d1y2ysd718gwb"]
+[gd_scene format=3 uid="uid://d1y2ysd718gwb"]
 
 [ext_resource type="Script" uid="uid://b2lvwxofmtkb8" path="res://Scripts/vision_manager.gd" id="1_bk5id"]
 
-[node name="VisionManager" type="Node3D"]
+[node name="VisionManager" type="Node3D" unique_id=97198522]
 script = ExtResource("1_bk5id")
 
-[node name="LOSRayCast3D" type="RayCast3D" parent="."]
+[node name="LOSRayCast3D" type="RayCast3D" parent="." unique_id=388759479]
 enabled = false

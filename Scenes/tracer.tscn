@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dn5s0ejnq77f6"]
+[gd_scene format=3 uid="uid://dn5s0ejnq77f6"]
 
 [ext_resource type="Script" uid="uid://c31t6mr5s84pg" path="res://Scenes/tracer.gd" id="1_rds43"]
-[ext_resource type="Texture2D" uid="uid://dyvavbnprdfei" path="res://Textures/bullet_texture.png" id="2_rvucj"]
+[ext_resource type="Texture2D" uid="uid://c24gmih2dxqik" path="res://Textures/bullet_texture.png" id="2_rvucj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rvucj"]
 transparency = 2
@@ -18,10 +18,10 @@ grow_amount = 0.525
 
 [sub_resource type="QuadMesh" id="QuadMesh_rds43"]
 
-[node name="Tracer" type="Node3D"]
+[node name="Tracer" type="Node3D" unique_id=457440522]
 script = ExtResource("1_rds43")
 
-[node name="LineMesh3D" type="MeshInstance3D" parent="."]
+[node name="LineMesh3D" type="MeshInstance3D" parent="." unique_id=1282253548]
 layers = 524288
 material_override = SubResource("StandardMaterial3D_rvucj")
 mesh = SubResource("QuadMesh_rds43")

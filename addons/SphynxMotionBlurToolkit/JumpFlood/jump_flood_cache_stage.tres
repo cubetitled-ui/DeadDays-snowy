@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="ShaderStageResource" load_steps=3 format=3 uid="uid://bq18dhoelcexm"]
+[gd_resource type="Resource" script_class="ShaderStageResource" format=3 uid="uid://bq18dhoelcexm"]
 
-[ext_resource type="Script" path="res://addons/SphynxMotionBlurToolkit/BaseClasses/shader_pass_resource.gd" id="1_3clo0"]
-[ext_resource type="RDShaderFile" uid="uid://quuyr2q5w5kx" path="res://addons/SphynxMotionBlurToolkit/JumpFlood/ShaderFiles/jump_flood_cache.glsl" id="2_val47"]
+[ext_resource type="Script" uid="uid://dj7c248uheoal" path="res://addons/SphynxMotionBlurToolkit/BaseClasses/shader_pass_resource.gd" id="1_3clo0"]
+[ext_resource type="RDShaderFile" uid="uid://csi7ito6obnnc" path="res://addons/SphynxMotionBlurToolkit/JumpFlood/ShaderFiles/jump_flood_cache.glsl" id="2_val47"]
 
 [resource]
 script = ExtResource("1_3clo0")

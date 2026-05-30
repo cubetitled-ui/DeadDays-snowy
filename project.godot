@@ -12,15 +12,16 @@ config_version=5
 
 config/name="Deadays"
 run/main_scene="uid://cf6o73wshtqv7"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 boot_splash/show_image=false
 config/icon="uid://bamje4ysbbqrg"
 
 [autoload]
 
 Settings="*res://Scripts/settings.gd"
-DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
+DebugMenu="*uid://cggqb75a8w8r"
 GameStats="*res://Scripts/game_stats.gd"
+ModLoader="*res://addons/mod_loader/mod_loader.gd"
 
 [display]
 
@@ -31,7 +32,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/debug_menu/plugin.cfg")
+enabled=PackedStringArray("res://addons/debug_menu/plugin.cfg", "res://addons/snowy_tools/plugin.cfg")
 
 [global_group]
 

@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://davv6erj5myjq"]
+[gd_scene format=3 uid="uid://davv6erj5myjq"]
 
 [ext_resource type="Script" uid="uid://cwklfkx7js1io" path="res://Scripts/settings_menu.gd" id="1_0cmel"]
-[ext_resource type="FontFile" uid="uid://dl0w7m45pooel" path="res://Faithful.ttf" id="2_mlw3h"]
+[ext_resource type="FontFile" uid="uid://di748iomvi46r" path="res://Faithful.ttf" id="2_mlw3h"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_e6mvm"]
 font = ExtResource("2_mlw3h")
@@ -11,7 +11,7 @@ font_size = 36
 font = ExtResource("2_mlw3h")
 font_size = 36
 
-[node name="SettingsMenu" type="Control"]
+[node name="SettingsMenu" type="Control" unique_id=652731360]
 visible = false
 layout_mode = 3
 anchors_preset = 15
@@ -21,7 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0cmel")
 
-[node name="ColorRect2" type="ColorRect" parent="."]
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=480119311]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -31,7 +31,7 @@ grow_vertical = 2
 mouse_filter = 1
 color = Color(0, 0, 0, 0.160784)
 
-[node name="ColorRect" type="ColorRect" parent="ColorRect2"]
+[node name="ColorRect" type="ColorRect" parent="ColorRect2" unique_id=1000119288]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -47,7 +47,7 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0.588235)
 
-[node name="ColorRect" type="ColorRect" parent="ColorRect2/ColorRect"]
+[node name="ColorRect" type="ColorRect" parent="ColorRect2/ColorRect" unique_id=701216968]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -56,7 +56,7 @@ grow_horizontal = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0.478431)
 
-[node name="SoundPage" type="Control" parent="ColorRect2/ColorRect"]
+[node name="SoundPage" type="Control" parent="ColorRect2/ColorRect" unique_id=637697626]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -65,7 +65,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MasterVolume" type="Label" parent="ColorRect2/ColorRect/SoundPage"]
+[node name="MasterVolume" type="Label" parent="ColorRect2/ColorRect/SoundPage" unique_id=954951808]
 layout_mode = 0
 offset_left = 109.5
 offset_top = 96.5
@@ -75,7 +75,7 @@ text = "MASTER_VOLUME"
 label_settings = SubResource("LabelSettings_e6mvm")
 horizontal_alignment = 1
 
-[node name="MasterVolumeSlider" type="HSlider" parent="ColorRect2/ColorRect/SoundPage/MasterVolume"]
+[node name="MasterVolumeSlider" type="HSlider" parent="ColorRect2/ColorRect/SoundPage/MasterVolume" unique_id=367504187]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -87,7 +87,7 @@ grow_vertical = 2
 max_value = 1.0
 step = 0.001
 
-[node name="MusicVolume" type="Label" parent="ColorRect2/ColorRect/SoundPage"]
+[node name="MusicVolume" type="Label" parent="ColorRect2/ColorRect/SoundPage" unique_id=2046323969]
 layout_mode = 0
 offset_left = 109.5
 offset_top = 147.5
@@ -97,7 +97,7 @@ text = "MUSIC_VOLUME"
 label_settings = SubResource("LabelSettings_e6mvm")
 horizontal_alignment = 1
 
-[node name="MusicVolumeSlider" type="HSlider" parent="ColorRect2/ColorRect/SoundPage/MusicVolume"]
+[node name="MusicVolumeSlider" type="HSlider" parent="ColorRect2/ColorRect/SoundPage/MusicVolume" unique_id=754085239]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -109,7 +109,7 @@ grow_vertical = 2
 max_value = 1.0
 step = 0.001
 
-[node name="PlayerVolume" type="Label" parent="ColorRect2/ColorRect/SoundPage"]
+[node name="PlayerVolume" type="Label" parent="ColorRect2/ColorRect/SoundPage" unique_id=822656213]
 layout_mode = 0
 offset_left = 109.5
 offset_top = 196.5
@@ -119,7 +119,7 @@ text = "PLAYER_VOLUME"
 label_settings = SubResource("LabelSettings_e6mvm")
 horizontal_alignment = 1
 
-[node name="PlayerVolumeSlider" type="HSlider" parent="ColorRect2/ColorRect/SoundPage/PlayerVolume"]
+[node name="PlayerVolumeSlider" type="HSlider" parent="ColorRect2/ColorRect/SoundPage/PlayerVolume" unique_id=1364340277]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -131,7 +131,7 @@ grow_vertical = 2
 max_value = 1.0
 step = 0.001
 
-[node name="ZombieVolume" type="Label" parent="ColorRect2/ColorRect/SoundPage"]
+[node name="ZombieVolume" type="Label" parent="ColorRect2/ColorRect/SoundPage" unique_id=269806121]
 layout_mode = 0
 offset_left = 109.5
 offset_top = 247.5
@@ -141,7 +141,7 @@ text = "ZOMBIE_VOLUME"
 label_settings = SubResource("LabelSettings_e6mvm")
 horizontal_alignment = 1
 
-[node name="ZombieVolumeSlider" type="HSlider" parent="ColorRect2/ColorRect/SoundPage/ZombieVolume"]
+[node name="ZombieVolumeSlider" type="HSlider" parent="ColorRect2/ColorRect/SoundPage/ZombieVolume" unique_id=1840187089]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -153,7 +153,7 @@ grow_vertical = 2
 max_value = 1.0
 step = 0.001
 
-[node name="WeaponVolume" type="Label" parent="ColorRect2/ColorRect/SoundPage"]
+[node name="WeaponVolume" type="Label" parent="ColorRect2/ColorRect/SoundPage" unique_id=1559964722]
 layout_mode = 0
 offset_left = 110.5
 offset_top = 295.5
@@ -163,7 +163,7 @@ text = "WEAPON_VOLUME"
 label_settings = SubResource("LabelSettings_e6mvm")
 horizontal_alignment = 1
 
-[node name="WeaponVolumeSlider" type="HSlider" parent="ColorRect2/ColorRect/SoundPage/WeaponVolume"]
+[node name="WeaponVolumeSlider" type="HSlider" parent="ColorRect2/ColorRect/SoundPage/WeaponVolume" unique_id=313251957]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -177,7 +177,7 @@ grow_vertical = 2
 max_value = 1.0
 step = 0.001
 
-[node name="GamePage" type="Control" parent="ColorRect2/ColorRect"]
+[node name="GamePage" type="Control" parent="ColorRect2/ColorRect" unique_id=672422861]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -185,7 +185,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="FOVLabel" type="Label" parent="ColorRect2/ColorRect/GamePage"]
+[node name="FOVLabel" type="Label" parent="ColorRect2/ColorRect/GamePage" unique_id=73731795]
 layout_mode = 0
 offset_left = 109.5
 offset_top = 96.5
@@ -195,7 +195,7 @@ text = "FOV"
 label_settings = SubResource("LabelSettings_e6mvm")
 horizontal_alignment = 1
 
-[node name="FovSlider" type="HSlider" parent="ColorRect2/ColorRect/GamePage/FOVLabel"]
+[node name="FovSlider" type="HSlider" parent="ColorRect2/ColorRect/GamePage/FOVLabel" unique_id=1365224856]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -208,7 +208,7 @@ min_value = 70.0
 max_value = 110.0
 value = 75.0
 
-[node name="SenseLabel" type="Label" parent="ColorRect2/ColorRect/GamePage"]
+[node name="SenseLabel" type="Label" parent="ColorRect2/ColorRect/GamePage" unique_id=1892901132]
 layout_mode = 0
 offset_left = 109.5
 offset_top = 147.5
@@ -219,7 +219,7 @@ label_settings = SubResource("LabelSettings_e6mvm")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="SenseSlider" type="HSlider" parent="ColorRect2/ColorRect/GamePage/SenseLabel"]
+[node name="SenseSlider" type="HSlider" parent="ColorRect2/ColorRect/GamePage/SenseLabel" unique_id=206770072]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -233,7 +233,7 @@ max_value = 5.0
 step = 0.1
 value = 1.0
 
-[node name="AimPointLabel" type="Label" parent="ColorRect2/ColorRect/GamePage"]
+[node name="AimPointLabel" type="Label" parent="ColorRect2/ColorRect/GamePage" unique_id=1846124495]
 layout_mode = 0
 offset_left = 109.5
 offset_top = 190.5
@@ -244,7 +244,7 @@ label_settings = SubResource("LabelSettings_e6mvm")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AimButton" type="Button" parent="ColorRect2/ColorRect/GamePage/AimPointLabel"]
+[node name="AimButton" type="Button" parent="ColorRect2/ColorRect/GamePage/AimPointLabel" unique_id=603915657]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -254,7 +254,7 @@ offset_right = 246.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="AimLabel" type="Label" parent="ColorRect2/ColorRect/GamePage/AimPointLabel/AimButton"]
+[node name="AimLabel" type="Label" parent="ColorRect2/ColorRect/GamePage/AimPointLabel/AimButton" unique_id=206625646]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -266,7 +266,7 @@ label_settings = SubResource("LabelSettings_e6mvm")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="FPSLimitLabel" type="Label" parent="ColorRect2/ColorRect/GamePage"]
+[node name="FPSLimitLabel" type="Label" parent="ColorRect2/ColorRect/GamePage" unique_id=1083871830]
 layout_mode = 0
 offset_left = 109.5
 offset_top = 232.5
@@ -277,7 +277,7 @@ label_settings = SubResource("LabelSettings_e6mvm")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="FPSLimitSlider" type="HSlider" parent="ColorRect2/ColorRect/GamePage/FPSLimitLabel"]
+[node name="FPSLimitSlider" type="HSlider" parent="ColorRect2/ColorRect/GamePage/FPSLimitLabel" unique_id=1470668458]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -290,7 +290,7 @@ min_value = 30.0
 max_value = 300.0
 value = 300.0
 
-[node name="FPSLimitValueLabel" type="Label" parent="ColorRect2/ColorRect/GamePage"]
+[node name="FPSLimitValueLabel" type="Label" parent="ColorRect2/ColorRect/GamePage" unique_id=1726069265]
 layout_mode = 0
 offset_left = 357.5
 offset_top = 265.5
@@ -301,7 +301,7 @@ label_settings = SubResource("LabelSettings_e6mvm")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ExitLabel" type="Label" parent="ColorRect2/ColorRect"]
+[node name="ExitLabel" type="Label" parent="ColorRect2/ColorRect" unique_id=1828687793]
 layout_mode = 1
 offset_right = 122.0
 offset_bottom = 40.0
@@ -310,7 +310,7 @@ label_settings = SubResource("LabelSettings_c1k8q")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="ColorRect2/ColorRect/ExitLabel"]
+[node name="Button" type="Button" parent="ColorRect2/ColorRect/ExitLabel" unique_id=629099]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -320,7 +320,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_default_cursor_shape = 2
 
-[node name="SoundLabel" type="Label" parent="ColorRect2/ColorRect"]
+[node name="SoundLabel" type="Label" parent="ColorRect2/ColorRect" unique_id=108984319]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -334,7 +334,7 @@ label_settings = SubResource("LabelSettings_c1k8q")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="ColorRect2/ColorRect/SoundLabel"]
+[node name="Button" type="Button" parent="ColorRect2/ColorRect/SoundLabel" unique_id=1721321194]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -343,7 +343,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GameLabel" type="Label" parent="ColorRect2/ColorRect"]
+[node name="GameLabel" type="Label" parent="ColorRect2/ColorRect" unique_id=1850818683]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -357,7 +357,7 @@ label_settings = SubResource("LabelSettings_c1k8q")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="ColorRect2/ColorRect/GameLabel"]
+[node name="Button" type="Button" parent="ColorRect2/ColorRect/GameLabel" unique_id=233844015]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15

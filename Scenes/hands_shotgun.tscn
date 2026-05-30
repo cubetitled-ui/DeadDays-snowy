@@ -1,10 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://br3vhxlukfqj3"]
+[gd_scene format=3 uid="uid://br3vhxlukfqj3"]
 
-[ext_resource type="PackedScene" uid="uid://dkcdkcr877rm" path="res://Models/hands_shotgun.glb" id="1_8ojlk"]
+[ext_resource type="PackedScene" uid="uid://c8yh6v1w7rnpw" path="res://Models/hands_shotgun.glb" id="1_8ojlk"]
 
-[node name="hands_shotgun" instance=ExtResource("1_8ojlk")]
+[node name="hands_shotgun" unique_id=1174876439 instance=ExtResource("1_8ojlk")]
 
-[node name="Skeleton3D" parent="Bones" index="0"]
+[node name="Skeleton3D" parent="Bones" parent_id_path=PackedInt32Array(996939502) index="0" unique_id=1453288203]
 bones/1/position = Vector3(0.422377, 0.0364622, -0.00310091)
 bones/1/rotation = Quaternion(0.639796, 0.453287, -0.367388, 0.500218)
 bones/2/rotation = Quaternion(-0.150019, -0.139417, -0.053619, 0.977334)
@@ -14,5 +14,5 @@ bones/20/rotation = Quaternion(-0.200784, 0.968263, -0.144047, 0.0374598)
 bones/21/rotation = Quaternion(-0.109697, 0.980595, -0.0147991, -0.161805)
 bones/34/rotation = Quaternion(0.722144, -0.557836, 0.372453, -0.169132)
 
-[node name="Cylinder_002" parent="Bones/Skeleton3D" index="0"]
-transform = Transform3D(3.46452e-07, 0.258433, 0.020609, -0.259254, 3.36207e-07, -2.90573e-07, -3.46452e-07, -0.0206089, 0.258433, 0.759593, 1.53458, 0.19762)
+[node name="Palm_R" parent="Bones/Skeleton3D" index="0" unique_id=1089831186]
+transform = Transform3D(-0.014968924, 0.9516571, 0.3067969, -0.9846767, 0.039286528, -0.16990706, -0.17374648, -0.30463898, 0.9364874, 0.5153611, 1.4915591, 0.2583566)

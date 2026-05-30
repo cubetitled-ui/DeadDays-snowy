@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bnkt2tp0umgqy"]
+[gd_scene format=3 uid="uid://bnkt2tp0umgqy"]
 
 [ext_resource type="Script" uid="uid://jspa63vxejt8" path="res://Scripts/pickup.gd" id="1_v7u4w"]
 
@@ -67,20 +67,18 @@ _data = {
 &"spin": SubResource("Animation_cya6u")
 }
 
-[node name="Pickup" type="Area3D" groups=["pickup"]]
+[node name="Pickup" type="Area3D" unique_id=1591754849 groups=["pickup"]]
 collision_layer = 16
 collision_mask = 16
 monitoring = false
 script = ExtResource("1_v7u4w")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2091322352]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 shape = SubResource("SphereShape3D_v7u4w")
 
-[node name="Graphics" type="Node3D" parent="."]
+[node name="Graphics" type="Node3D" parent="." unique_id=1585317252]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_yxn47")
-}
-autoplay = "spin"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1173711128]
+libraries/ = SubResource("AnimationLibrary_yxn47")
+autoplay = &"spin"

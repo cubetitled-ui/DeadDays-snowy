@@ -1,6 +1,6 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dn8iqfgdbxyuy"]
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dn8iqfgdbxyuy"]
 
-[ext_resource type="Texture2D" uid="uid://dt8ie85uqxvuc" path="res://Models/gib/gib1_texture.png" id="1_sf4lu"]
+[ext_resource type="Texture2D" uid="uid://b4j1h523plyh0" path="res://Models/gib/gib1_texture.png" id="1_sf4lu"]
 
 [resource]
 resource_name = "Material"

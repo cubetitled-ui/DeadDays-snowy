@@ -1,14 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://dba5u26luyj32"]
+[gd_scene format=3 uid="uid://dba5u26luyj32"]
 
 [ext_resource type="Script" uid="uid://r5w6m42dkl6i" path="res://Scripts/tree_script.gd" id="1_pnsfu"]
-[ext_resource type="Texture2D" uid="uid://cthmrro20l1gi" path="res://Textures/tree_tree_texture.png" id="1_x5xpb"]
+[ext_resource type="Texture2D" uid="uid://dkal4u0db1ru" path="res://Textures/tree_tree_texture.png" id="1_x5xpb"]
 [ext_resource type="Material" uid="uid://d34btolueg2j" path="res://Materials/tree.tres" id="2_yb250"]
 
-[node name="tree" type="Node3D"]
+[node name="tree" type="Node3D" unique_id=1585987834]
 transform = Transform3D(40, 0, 0, 0, 40, 0, 0, 0, 40, 0, 10, 0)
 script = ExtResource("1_pnsfu")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=984635996]
 transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -0.0186714, 0.778875, -0.00263138)
 material_override = ExtResource("2_yb250")
 modulate = Color(0.427493, 0.427493, 0.427493, 1)

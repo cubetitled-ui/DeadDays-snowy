@@ -1,11 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://qdsgpjnvbrtw"]
+[gd_scene format=3 uid="uid://qdsgpjnvbrtw"]
 
-[ext_resource type="PackedScene" uid="uid://hcx8oc03v3yu" path="res://Models/cardboard_box.glb" id="1_jymmo"]
+[ext_resource type="PackedScene" uid="uid://cangx654r5ph" path="res://Models/cardboard_box.glb" id="1_jymmo"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_1aess"]
 data = PackedVector3Array(1.5421, 1.6822, 1.1948, -1.5719, 1.6822, -1.1948, 1.5421, 1.6822, -1.1948, 1.5421, 1.6822, 1.1948, -1.5719, 1.6822, 1.1948, -1.5719, 1.6822, -1.1948, -1.5719, 1.6822, 1.1948, 1.5421, 0.0002, 1.1948, -1.5719, 0.0002, 1.1948, -1.5719, 1.6822, 1.1948, 1.5421, 1.6822, 1.1948, 1.5421, 0.0002, 1.1948, -1.5719, 1.6822, -1.1948, -1.5719, 0.0002, 1.1948, -1.5719, 0.0002, -1.1948, -1.5719, 1.6822, -1.1948, -1.5719, 1.6822, 1.1948, -1.5719, 0.0002, 1.1948, -1.5719, 0.0002, 1.1948, 1.5421, 0.0002, -1.1948, -1.5719, 0.0002, -1.1948, -1.5719, 0.0002, 1.1948, 1.5421, 0.0002, 1.1948, 1.5421, 0.0002, -1.1948, 1.5421, 1.6822, 1.1948, 1.5421, 0.0002, -1.1948, 1.5421, 0.0002, 1.1948, 1.5421, 1.6822, 1.1948, 1.5421, 1.6822, -1.1948, 1.5421, 0.0002, -1.1948, 1.5421, 1.6822, -1.1948, -1.5719, 0.0002, -1.1948, 1.5421, 0.0002, -1.1948, 1.5421, 1.6822, -1.1948, -1.5719, 1.6822, -1.1948, -1.5719, 0.0002, -1.1948)
 
-[node name="cardboard_box" instance=ExtResource("1_jymmo")]
+[node name="cardboard_box" unique_id=731407409 instance=ExtResource("1_jymmo")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube" parent_id_path=PackedInt32Array(284987531) index="0" unique_id=1903691809]
 shape = SubResource("ConcavePolygonShape3D_1aess")

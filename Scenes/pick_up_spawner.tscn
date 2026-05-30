@@ -1,21 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://clxf1nqbgmgbq"]
+[gd_scene format=3 uid="uid://clxf1nqbgmgbq"]
 
 [ext_resource type="Script" uid="uid://diijpxr2pbbe2" path="res://Scripts/pick_up_spawner.gd" id="1_rlous"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_rlous"]
 radius = 23.9913
 
-[node name="PickUpSpawner_1" type="Node3D"]
+[node name="PickUpSpawner_1" type="Node3D" unique_id=787623369]
 script = ExtResource("1_rlous")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=130340725]
 autostart = true
 
-[node name="Area3D" type="Area3D" parent="."]
+[node name="Area3D" type="Area3D" parent="." unique_id=187184695]
 collision_layer = 0
 collision_mask = 16
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=351983148]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0201931, 9.53674e-07, 0.0120854)
 shape = SubResource("SphereShape3D_rlous")
 

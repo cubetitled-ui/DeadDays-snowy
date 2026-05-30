@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="ShaderStageResource" load_steps=3 format=3 uid="uid://cymk87e4nyxva"]
+[gd_resource type="Resource" script_class="ShaderStageResource" format=3 uid="uid://cymk87e4nyxva"]
 
-[ext_resource type="Script" path="res://addons/SphynxMotionBlurToolkit/BaseClasses/shader_pass_resource.gd" id="1_5vg08"]
-[ext_resource type="RDShaderFile" uid="uid://cqlltc8f21wre" path="res://addons/SphynxMotionBlurToolkit/JumpFlood/ShaderFiles/jf_guertin_tile_max_y.glsl" id="2_iusae"]
+[ext_resource type="Script" uid="uid://dj7c248uheoal" path="res://addons/SphynxMotionBlurToolkit/BaseClasses/shader_pass_resource.gd" id="1_5vg08"]
+[ext_resource type="RDShaderFile" uid="uid://cym2i04wdve6a" path="res://addons/SphynxMotionBlurToolkit/JumpFlood/ShaderFiles/jf_guertin_tile_max_y.glsl" id="2_iusae"]
 
 [resource]
 script = ExtResource("1_5vg08")

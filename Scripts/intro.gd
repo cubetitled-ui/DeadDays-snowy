@@ -20,4 +20,8 @@ func _input(event: InputEvent) -> void:
 		
 func skip_intro():
 	set_process_input(false)
-	get_tree().change_scene_to_file("res://Scenes/mainmenu.tscn")
+	var ml = get_node("/root/ModLoader")
+	if ml and ml.has_method("change_scene"):
+		ml.change_scene("res://Scenes/mainmenu.tscn")
+	else:
+		get_tree().change_scene_to_file("res://Scenes/mainmenu.tscn")

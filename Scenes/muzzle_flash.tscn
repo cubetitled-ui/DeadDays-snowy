@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://c3idbl6ci5b7k"]
+[gd_scene format=3 uid="uid://c3idbl6ci5b7k"]
 
 [ext_resource type="Script" uid="uid://csjxj2p0laqym" path="res://Scripts/muzzle_flash.gd" id="1_21mul"]
-[ext_resource type="Texture2D" uid="uid://cv55v22gwkiw4" path="res://Textures/smoke_texture.png" id="2_xbt7w"]
+[ext_resource type="Texture2D" uid="uid://ckeh1rgbowc6r" path="res://Textures/smoke_texture.png" id="2_xbt7w"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2ugjg"]
 angle_min = 1.07288e-05
@@ -36,16 +36,16 @@ particles_anim_loop = false
 [sub_resource type="QuadMesh" id="QuadMesh_01ce2"]
 material = SubResource("StandardMaterial3D_6yj61")
 
-[node name="MuzzleFlash" type="Node3D"]
+[node name="MuzzleFlash" type="Node3D" unique_id=876468954]
 script = ExtResource("1_21mul")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=322274271]
 light_color = Color(0.899174, 0.664192, 0.0334335, 1)
 light_energy = 8.0
 light_indirect_energy = 6.0
 light_size = 0.063
 
-[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=244242521]
 emitting = false
 amount = 2
 lifetime = 0.01

@@ -1,101 +1,101 @@
-[gd_scene load_steps=191 format=4 uid="uid://b26xhv0j7hlmu"]
+[gd_scene format=4 uid="uid://b26xhv0j7hlmu"]
 
 [ext_resource type="Script" uid="uid://bdhl73qfuybdu" path="res://Scripts/player.gd" id="1_508ok"]
 [ext_resource type="Script" uid="uid://kegcgi3ub7a1" path="res://Scripts/camera_root.gd" id="2_bqbau"]
 [ext_resource type="Script" uid="uid://bdvgibey2aohu" path="res://Scripts/weapon_manager.gd" id="2_idpv6"]
 [ext_resource type="PackedScene" uid="uid://fs6tq3trbh4y" path="res://Scenes/character_mover.tscn" id="2_xxgcw"]
 [ext_resource type="PackedScene" uid="uid://kry43mb8dukk" path="res://Scenes/health_manager.tscn" id="3_exd8k"]
-[ext_resource type="Texture2D" uid="uid://17c6hup4qkde" path="res://Textures/hands_knife_Knife_texture.png" id="4_6b312"]
+[ext_resource type="Texture2D" uid="uid://bki3tr1t20xm" path="res://Textures/hands_knife_Knife_texture.png" id="4_6b312"]
 [ext_resource type="PackedScene" uid="uid://luegkh002u85" path="res://Scenes/bullet_emitter.tscn" id="5_8l73k"]
-[ext_resource type="Texture2D" uid="uid://bri76w1yihiqy" path="res://Textures/hands_knife_arm_texture.png" id="5_lisdf"]
+[ext_resource type="Texture2D" uid="uid://d4o5d3i03r5s" path="res://Textures/hands_knife_arm_texture.png" id="5_lisdf"]
 [ext_resource type="Script" uid="uid://ce013o0qn08jo" path="res://Scripts/weapon.gd" id="5_rpf03"]
 [ext_resource type="PackedScene" uid="uid://c3idbl6ci5b7k" path="res://Scenes/muzzle_flash.tscn" id="6_gqopd"]
 [ext_resource type="Script" uid="uid://ddrakx2w0xfud" path="res://Scripts/bullet_emitter.gd" id="7_x5dtk"]
 [ext_resource type="Script" uid="uid://cpinx10q0f446" path="res://Scripts/play_random_sound.gd" id="8_0gysh"]
 [ext_resource type="PackedScene" uid="uid://b8wwongbcfe17" path="res://Scenes/hit_scan_bullet_emitter.tscn" id="8_3t07l"]
-[ext_resource type="AudioStream" uid="uid://b1sxth5rcst6t" path="res://SFX/knife_equip.wav" id="8_xuaoq"]
-[ext_resource type="AudioStream" uid="uid://bsutu8eilaf3h" path="res://SFX/claw_swing1.wav" id="9_vfarp"]
-[ext_resource type="Texture2D" uid="uid://b8phjkem5esrd" path="res://Textures/hands_pistol_makarov_texture.png" id="11_ie7r7"]
+[ext_resource type="AudioStream" uid="uid://btdrpoknionrl" path="res://SFX/knife_equip.wav" id="8_xuaoq"]
+[ext_resource type="AudioStream" uid="uid://1mpm1bcsr7yw" path="res://SFX/claw_swing1.wav" id="9_vfarp"]
+[ext_resource type="Texture2D" uid="uid://b66mtyw43cdb2" path="res://Textures/hands_pistol_makarov_texture.png" id="11_ie7r7"]
 [ext_resource type="PackedScene" uid="uid://c8hhremyx2bvj" path="res://Scenes/burst_emitter.tscn" id="12_58jvb"]
-[ext_resource type="Texture2D" uid="uid://xllj7b7dwf4f" path="res://Textures/hands_pistol_arm_texture.png" id="12_vq3lt"]
+[ext_resource type="Texture2D" uid="uid://cn5sawnnnswkp" path="res://Textures/hands_pistol_arm_texture.png" id="12_vq3lt"]
 [ext_resource type="PackedScene" uid="uid://co75gh0q6i43b" path="res://Scenes/spray_emitter.tscn" id="13_8l73k"]
 [ext_resource type="Animation" uid="uid://dpglai4ii2rmr" path="res://Animations/attack_pistol.res" id="13_pukcj"]
 [ext_resource type="Animation" uid="uid://bmd0ofj4f1l4f" path="res://Animations/inspection_pistol.res" id="14_1htnp"]
-[ext_resource type="AudioStream" uid="uid://blhraxw5tglwh" path="res://SFX/pistol_fire2.wav" id="14_y6uwr"]
+[ext_resource type="AudioStream" uid="uid://bbrj2d4shcqcv" path="res://SFX/pistol_fire2.wav" id="14_y6uwr"]
 [ext_resource type="Animation" uid="uid://bun1lj8ckpj0l" path="res://Animations/pickup.res" id="15_m376e"]
-[ext_resource type="Texture2D" uid="uid://bkscf0l6u7f44" path="res://Textures/crosshair.png" id="15_qqcod"]
-[ext_resource type="AudioStream" uid="uid://ctjco8vdjraxf" path="res://SFX/weapon_equip.wav" id="15_wohnl"]
-[ext_resource type="AudioStream" uid="uid://dedk5lo1cmdym" path="res://SFX/shotgun_empty.wav" id="16_36dho"]
-[ext_resource type="AudioStream" uid="uid://c78g0cbp04jja" path="res://SFX/m4a1_shot.wav" id="16_y6uwr"]
+[ext_resource type="Texture2D" uid="uid://bo7m1hgkqxcqe" path="res://Textures/crosshair.png" id="15_qqcod"]
+[ext_resource type="AudioStream" uid="uid://4u41qbh75i11" path="res://SFX/weapon_equip.wav" id="15_wohnl"]
+[ext_resource type="AudioStream" uid="uid://b00alpj1go3dc" path="res://SFX/shotgun_empty.wav" id="16_36dho"]
+[ext_resource type="AudioStream" uid="uid://dgrse8uvkbdo5" path="res://SFX/m4a1_shot.wav" id="16_y6uwr"]
 [ext_resource type="Script" uid="uid://ufvrqdxxxh" path="res://Scripts/death_screen.gd" id="18_fs7ks"]
-[ext_resource type="AudioStream" uid="uid://b30nqckkbjcba" path="res://SFX/shotgunshot.wav" id="20_83xs0"]
+[ext_resource type="AudioStream" uid="uid://1rtyvngnv2u3" path="res://SFX/shotgunshot.wav" id="20_83xs0"]
 [ext_resource type="Script" uid="uid://bqtxnvpcqyetl" path="res://Scripts/pickup_manager.gd" id="20_l6n3p"]
 [ext_resource type="Script" uid="uid://bxqgciky0ef7h" path="res://Scripts/ui.gd" id="20_olqyp"]
-[ext_resource type="AudioStream" uid="uid://d4mg5pr3atfth" path="res://SFX/medkit.wav" id="22_bi64h"]
-[ext_resource type="Texture2D" uid="uid://rtuqspbb0hux" path="res://Textures/hands_m4_m4a1_texture.png" id="22_pukcj"]
-[ext_resource type="Texture2D" uid="uid://c1mprghdovdvu" path="res://Textures/hands_m4_arm_texture.png" id="23_1htnp"]
-[ext_resource type="AudioStream" uid="uid://bxuck2efojyfm" path="res://SFX/ammo_pickup.wav" id="23_2ijsl"]
+[ext_resource type="AudioStream" uid="uid://xj1afsh6hsjt" path="res://SFX/medkit.wav" id="22_bi64h"]
+[ext_resource type="Texture2D" uid="uid://83q1fkn34dqi" path="res://Textures/hands_m4_m4a1_texture.png" id="22_pukcj"]
+[ext_resource type="Texture2D" uid="uid://b7ot7uodecua3" path="res://Textures/hands_m4_arm_texture.png" id="23_1htnp"]
+[ext_resource type="AudioStream" uid="uid://byswkc73qtkyb" path="res://SFX/ammo_pickup.wav" id="23_2ijsl"]
 [ext_resource type="Animation" uid="uid://bsnyesbfgm1ce" path="res://Animations/custom_m4_attack.res" id="24_m376e"]
-[ext_resource type="AudioStream" uid="uid://dxqw4qtk5sekl" path="res://SFX/shotgun_cock.wav" id="24_wohnl"]
-[ext_resource type="Texture2D" uid="uid://wg6meuj0vo1o" path="res://Textures/hands_shotgun_shotgun_texture.png" id="25_pukcj"]
-[ext_resource type="Texture2D" uid="uid://c6snowommyjga" path="res://Textures/hands_shotgun_arm_texture.png" id="26_1htnp"]
+[ext_resource type="AudioStream" uid="uid://dill63jhpcnca" path="res://SFX/shotgun_cock.wav" id="24_wohnl"]
+[ext_resource type="Texture2D" uid="uid://c6gtpyl8ph85o" path="res://Textures/hands_shotgun_shotgun_texture.png" id="25_pukcj"]
+[ext_resource type="Texture2D" uid="uid://bcqwebch4q032" path="res://Textures/hands_shotgun_arm_texture.png" id="26_1htnp"]
 [ext_resource type="Script" uid="uid://dd5xkm36fjxkr" path="res://Scripts/step_tracker.gd" id="26_nv4vc"]
-[ext_resource type="AudioStream" uid="uid://rduivi66xeo2" path="res://SFX/concrete1.wav" id="27_8gxox"]
-[ext_resource type="AudioStream" uid="uid://caol02tni64ne" path="res://SFX/concrete2.wav" id="28_11gg7"]
-[ext_resource type="AudioStream" uid="uid://80kmhcb55ewk" path="res://SFX/player_jump.mp3" id="29_qpa8y"]
+[ext_resource type="AudioStream" uid="uid://d2y5373ujdl3y" path="res://SFX/concrete1.wav" id="27_8gxox"]
+[ext_resource type="AudioStream" uid="uid://4ir2d6jxp804" path="res://SFX/concrete2.wav" id="28_11gg7"]
+[ext_resource type="AudioStream" uid="uid://djoesweavuhtn" path="res://SFX/player_jump.mp3" id="29_qpa8y"]
 [ext_resource type="Script" uid="uid://1cat2ofoiemu" path="res://Scenes/game_stats_panel.gd" id="34_awsf5"]
 [ext_resource type="Script" uid="uid://iykavlo53qaq" path="res://Scripts/pause_menu.gd" id="34_xwi16"]
-[ext_resource type="AudioStream" uid="uid://b62dl3lnn0kb7" path="res://SFX/knp_click.mp3" id="35_sweqm"]
+[ext_resource type="AudioStream" uid="uid://caqsmxjtk3jy0" path="res://SFX/knp_click.mp3" id="35_sweqm"]
 [ext_resource type="Script" uid="uid://cjxo2wh5cehj8" path="res://Scripts/shop_menu.gd" id="36_3vlem"]
-[ext_resource type="Texture2D" uid="uid://mpifcgk8rjjy" path="res://Textures/m4a1_icon.png" id="36_ax3m3"]
-[ext_resource type="Texture2D" uid="uid://14tl8qcaj137" path="res://Textures/blood_texture.png" id="36_bqbau"]
-[ext_resource type="Texture2D" uid="uid://vkr0kn36rxnu" path="res://Textures/shotgun_icon.png" id="37_3vlem"]
-[ext_resource type="Texture2D" uid="uid://du82vot3kv7vb" path="res://Textures/pistol_icon.png" id="37_8eeqe"]
-[ext_resource type="Texture2D" uid="uid://dyvgkqj4s7ttp" path="res://Textures/frozen_overlay.png" id="37_f5f5t"]
-[ext_resource type="AudioStream" uid="uid://cwds2i7ff5e50" path="res://SFX/player_death.mp3" id="37_sbwqj"]
-[ext_resource type="Texture2D" uid="uid://dyxcroarqi4y6" path="res://Textures/frozen_icon.png" id="39_qvbpb"]
-[ext_resource type="Texture2D" uid="uid://cy3nggkqo4c34" path="res://Textures/redscreen.png" id="40_1htnp"]
-[ext_resource type="FontFile" uid="uid://dl0w7m45pooel" path="res://Faithful.ttf" id="41_e6mvm"]
-[ext_resource type="Texture2D" uid="uid://dllmm3cn44a51" path="res://Textures/player_icon.png" id="43_6hq81"]
-[ext_resource type="AudioStream" uid="uid://d2odssakgvcxr" path="res://SFX/buying.wav" id="43_8eeqe"]
-[ext_resource type="Texture2D" uid="uid://dh7iqw7ccdypa" path="res://Textures/knife_icon.png" id="44_5cld6"]
-[ext_resource type="Texture2D" uid="uid://qcxnvgolvuxf" path="res://Textures/Perks/perk_1.png" id="49_5cld6"]
+[ext_resource type="Texture2D" uid="uid://bnxpgv04fcfq0" path="res://Textures/m4a1_icon.png" id="36_ax3m3"]
+[ext_resource type="Texture2D" uid="uid://dj5a8xoculvkj" path="res://Textures/blood_texture.png" id="36_bqbau"]
+[ext_resource type="Texture2D" uid="uid://wyd5wo4rffwh" path="res://Textures/shotgun_icon.png" id="37_3vlem"]
+[ext_resource type="Texture2D" uid="uid://cvkartvbamvkh" path="res://Textures/pistol_icon.png" id="37_8eeqe"]
+[ext_resource type="Texture2D" uid="uid://qkrjsww32wq5" path="res://Textures/frozen_overlay.png" id="37_f5f5t"]
+[ext_resource type="AudioStream" uid="uid://bnyylbtjjblj5" path="res://SFX/player_death.mp3" id="37_sbwqj"]
+[ext_resource type="Texture2D" uid="uid://d1hhf5bkridgx" path="res://Textures/frozen_icon.png" id="39_qvbpb"]
+[ext_resource type="Texture2D" uid="uid://oxksso0ogocj" path="res://Textures/redscreen.png" id="40_1htnp"]
+[ext_resource type="FontFile" uid="uid://di748iomvi46r" path="res://Faithful.ttf" id="41_e6mvm"]
+[ext_resource type="Texture2D" uid="uid://1nmrwk640esr" path="res://Textures/player_icon.png" id="43_6hq81"]
+[ext_resource type="AudioStream" uid="uid://c0471b34v634j" path="res://SFX/buying.wav" id="43_8eeqe"]
+[ext_resource type="Texture2D" uid="uid://biff7xlvk8imm" path="res://Textures/knife_icon.png" id="44_5cld6"]
+[ext_resource type="Texture2D" uid="uid://dx41qnu4odmmy" path="res://Textures/Perks/perk_1.png" id="49_5cld6"]
 [ext_resource type="PackedScene" uid="uid://davv6erj5myjq" path="res://settings_menu.tscn" id="49_f5f5t"]
 [ext_resource type="Script" uid="uid://dj4mek53a0xbg" path="res://Scripts/perk_button.gd" id="50_o736f"]
 [ext_resource type="Script" uid="uid://dot48gh5nxqcs" path="res://Scenes/perkcard.gd" id="50_vinow"]
-[ext_resource type="Texture2D" uid="uid://bpjbrqdea4mbs" path="res://Textures/Perks/perk_2.png" id="52_hseb1"]
-[ext_resource type="Texture2D" uid="uid://e0lau8vt4f52" path="res://Textures/Perks/perk_3.png" id="54_vinow"]
-[ext_resource type="Texture2D" uid="uid://bet6iscmqnij8" path="res://Textures/Perks/perk_15.png" id="56_awsf5"]
-[ext_resource type="AudioStream" uid="uid://b3jnapkv6pesr" path="res://SFX/player_hurt_1.mp3" id="58_n1x1j"]
-[ext_resource type="AudioStream" uid="uid://cv1t6rqrg08kn" path="res://SFX/player_phrase_1.mp3" id="58_nuaet"]
-[ext_resource type="Texture2D" uid="uid://tq3hbj51tn3l" path="res://Textures/Perks/perk_16.png" id="58_v84ne"]
-[ext_resource type="AudioStream" uid="uid://vmf2tlnlt4hj" path="res://SFX/player_phrase_2.mp3" id="59_bqbau"]
-[ext_resource type="AudioStream" uid="uid://cwm038jfb7wuy" path="res://SFX/player_hurt_2.mp3" id="59_c8b32"]
-[ext_resource type="Texture2D" uid="uid://btqep2vdwkg5t" path="res://Textures/Perks/perk_13.png" id="60_4pcjl"]
-[ext_resource type="AudioStream" uid="uid://b70ufueufvqfu" path="res://SFX/player_phrase_3.mp3" id="60_f5f5t"]
-[ext_resource type="AudioStream" uid="uid://dnhgrn37c5gtt" path="res://SFX/player_hurt_3.mp3" id="60_nj1g2"]
-[ext_resource type="AudioStream" uid="uid://by8cwfgg68nle" path="res://SFX/player_phrase_4.mp3" id="61_qvbpb"]
-[ext_resource type="Texture2D" uid="uid://bak8e0o05idg1" path="res://Textures/Perks/perk_4.png" id="62_3ath1"]
-[ext_resource type="AudioStream" uid="uid://dpvyb2oua36pw" path="res://SFX/player_phrase_5.mp3" id="62_sscpr"]
-[ext_resource type="Texture2D" uid="uid://bggkc7l2lk1a3" path="res://Textures/Perks/perk_8.png" id="64_pgf6i"]
-[ext_resource type="Texture2D" uid="uid://bak7a47ujl14a" path="res://Textures/Perks/perk_7.png" id="66_bvt37"]
-[ext_resource type="Texture2D" uid="uid://do6k2v0mk1ao8" path="res://Textures/Perks/perk_5.png" id="68_kt3hj"]
+[ext_resource type="Texture2D" uid="uid://c27qbcs7dr4j3" path="res://Textures/Perks/perk_2.png" id="52_hseb1"]
+[ext_resource type="Texture2D" uid="uid://cei2mdx81ue65" path="res://Textures/Perks/perk_3.png" id="54_vinow"]
+[ext_resource type="Texture2D" uid="uid://d28d5yoryhx4l" path="res://Textures/Perks/perk_15.png" id="56_awsf5"]
+[ext_resource type="AudioStream" uid="uid://b31f6c1luhplq" path="res://SFX/player_hurt_1.mp3" id="58_n1x1j"]
+[ext_resource type="AudioStream" uid="uid://comm8ejk0avfx" path="res://SFX/player_phrase_1.mp3" id="58_nuaet"]
+[ext_resource type="Texture2D" uid="uid://bdnr1uvfqykg" path="res://Textures/Perks/perk_16.png" id="58_v84ne"]
+[ext_resource type="AudioStream" uid="uid://dp72ua31onxer" path="res://SFX/player_phrase_2.mp3" id="59_bqbau"]
+[ext_resource type="AudioStream" uid="uid://mdb58wsjij6e" path="res://SFX/player_hurt_2.mp3" id="59_c8b32"]
+[ext_resource type="Texture2D" uid="uid://cqccwoj28g067" path="res://Textures/Perks/perk_13.png" id="60_4pcjl"]
+[ext_resource type="AudioStream" uid="uid://cmkj682vm7csv" path="res://SFX/player_phrase_3.mp3" id="60_f5f5t"]
+[ext_resource type="AudioStream" uid="uid://ckiaw0g6kigxp" path="res://SFX/player_hurt_3.mp3" id="60_nj1g2"]
+[ext_resource type="AudioStream" uid="uid://c8qbsx8clie15" path="res://SFX/player_phrase_4.mp3" id="61_qvbpb"]
+[ext_resource type="Texture2D" uid="uid://b4qmpacdc4c3e" path="res://Textures/Perks/perk_4.png" id="62_3ath1"]
+[ext_resource type="AudioStream" uid="uid://dqe31x3sp6d3k" path="res://SFX/player_phrase_5.mp3" id="62_sscpr"]
+[ext_resource type="Texture2D" uid="uid://b4hg22ueyu8mm" path="res://Textures/Perks/perk_8.png" id="64_pgf6i"]
+[ext_resource type="Texture2D" uid="uid://dmf8c65rn4kht" path="res://Textures/Perks/perk_7.png" id="66_bvt37"]
+[ext_resource type="Texture2D" uid="uid://cvkq061loy7qe" path="res://Textures/Perks/perk_5.png" id="68_kt3hj"]
 [ext_resource type="Script" uid="uid://c7vysi1mrp5q6" path="res://Scripts/perk_manager.gd" id="68_qvbpb"]
 [ext_resource type="Script" uid="uid://oxymap3684ao" path="res://Scripts/Perks/perk.gd" id="69_w4w4b"]
-[ext_resource type="Texture2D" uid="uid://doqux3b4ohff8" path="res://Textures/Perks/perk_10.png" id="70_2jrev"]
+[ext_resource type="Texture2D" uid="uid://m7epd31v7a2" path="res://Textures/Perks/perk_10.png" id="70_2jrev"]
 [ext_resource type="Resource" uid="uid://b61iyckuevli3" path="res://Scripts/Perks/Character/adrenaline.tres" id="70_6hq81"]
 [ext_resource type="Resource" uid="uid://bllplhwbthnks" path="res://Scripts/Perks/Character/health_perk.tres" id="71_5cld6"]
-[ext_resource type="Texture2D" uid="uid://c6edqme1qvwaa" path="res://Textures/Perks/perk_14.png" id="72_5j7nw"]
+[ext_resource type="Texture2D" uid="uid://bvd6akq01qa5j" path="res://Textures/Perks/perk_14.png" id="72_5j7nw"]
 [ext_resource type="Resource" uid="uid://crq0pilct0528" path="res://Scripts/Perks/Character/speed_perk.tres" id="72_o736f"]
 [ext_resource type="Resource" uid="uid://cxkghyu0h5b5k" path="res://Scripts/Perks/Knife/blood_harvest.tres" id="73_ketbw"]
 [ext_resource type="Resource" uid="uid://n4bd3a3oikaa" path="res://Scripts/Perks/Knife/fast_knife.tres" id="74_4grkl"]
-[ext_resource type="Texture2D" uid="uid://nxejy5eifrgb" path="res://Textures/Perks/perk_6.png" id="74_mrkcr"]
+[ext_resource type="Texture2D" uid="uid://cggslsjltnmou" path="res://Textures/Perks/perk_6.png" id="74_mrkcr"]
 [ext_resource type="Resource" uid="uid://bv2tfg1b5h0dh" path="res://Scripts/Perks/Knife/knife_damage_perk.tres" id="75_6yrdb"]
-[ext_resource type="Texture2D" uid="uid://c8r64ymi1ueae" path="res://Textures/Perks/perk_9.png" id="76_78kn1"]
+[ext_resource type="Texture2D" uid="uid://dfjvgdj8h4i3w" path="res://Textures/Perks/perk_9.png" id="76_78kn1"]
 [ext_resource type="Resource" uid="uid://crj5k8x3htfm5" path="res://Scripts/Perks/M16/m16_damage_perk.tres" id="76_ue0p1"]
 [ext_resource type="Resource" uid="uid://byep2wvn7vshx" path="res://Scripts/Perks/M16/m16_magazine_perk.tres" id="77_isbcs"]
 [ext_resource type="Resource" uid="uid://c4ayrqameoo3s" path="res://Scripts/Perks/M16/trophy_ammo.tres" id="78_142e3"]
-[ext_resource type="Texture2D" uid="uid://chu5yp0wri6cs" path="res://Textures/Perks/perk_12.png" id="78_nwtn4"]
+[ext_resource type="Texture2D" uid="uid://chapgbny7c6wi" path="res://Textures/Perks/perk_12.png" id="78_nwtn4"]
 [ext_resource type="Resource" uid="uid://d34fdwbabfihp" path="res://Scripts/Perks/Pistol/anatomy.tres" id="79_ts2c8"]
 [ext_resource type="Resource" uid="uid://b0mqavdma7hsa" path="res://Scripts/Perks/Pistol/pistol_damage_perk.tres" id="80_hcgbs"]
 [ext_resource type="Resource" uid="uid://brw2ldopiqvu3" path="res://Scripts/Perks/Pistol/pistol_magazine_perk.tres" id="81_mpfyg"]
@@ -2412,7 +2412,7 @@ data = PackedByteArray("SUQzAwAAAAAAPFRZRVIAAAAFAAAAMjAyNVRFTkMAAAAVAAAATEFNRSBp
 radius = 0.565234
 height = 2.08917
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("settings_manager", "weapon_holder", "crosshair") groups=["player"]]
+[node name="Player" type="CharacterBody3D" unique_id=1622181652 node_paths=PackedStringArray("settings_manager", "weapon_holder", "crosshair") groups=["player"]]
 process_mode = 3
 transform = Transform3D(15.1953, 0, 0, 0, 15.1953, 0, 0, 0, 15.1953, 0, 0, 0)
 collision_layer = 6
@@ -2424,31 +2424,31 @@ weapon_sway_amount = 0.005
 weapon_rotation_amount = 0.1
 crosshair = NodePath("CameraRoot/Camera3D/PlayerUILayer/StatsDisplay/Crosshair")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1764785009]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_b886q")
 
-[node name="CameraRoot" type="Node3D" parent="."]
+[node name="CameraRoot" type="Node3D" parent="." unique_id=1766292407]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 script = ExtResource("2_bqbau")
 
-[node name="Camera3D" type="Camera3D" parent="CameraRoot"]
+[node name="Camera3D" type="Camera3D" parent="CameraRoot" unique_id=298806641]
 transform = Transform3D(0.0658098, 0, 0, 0, 0.0658098, 0, 0, 0, 0.0658098, 0, 0, 0)
 fov = 90.0
 
-[node name="FirePoint" type="Node3D" parent="CameraRoot/Camera3D"]
+[node name="FirePoint" type="Node3D" parent="CameraRoot/Camera3D" unique_id=42735167]
 unique_name_in_owner = true
 
-[node name="WeaponManager" type="Node3D" parent="CameraRoot/Camera3D" node_paths=PackedStringArray("animation_player")]
+[node name="WeaponManager" type="Node3D" parent="CameraRoot/Camera3D" unique_id=106465097 node_paths=PackedStringArray("animation_player")]
 unique_name_in_owner = true
 script = ExtResource("2_idpv6")
 weapons_unlocked = [true, true, false, false]
 animation_player = NodePath("AnimationPlayer")
 
-[node name="Weapons" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager"]
+[node name="Weapons" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager" unique_id=958700925]
 
-[node name="Knife" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons" node_paths=PackedStringArray("animation_player")]
+[node name="Knife" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons" unique_id=216859355 node_paths=PackedStringArray("animation_player")]
 transform = Transform3D(0.351618, -1.71879, 9.36165e-05, 1.71879, 0.351618, 0.00104854, -0.00104603, -0.000118424, 1.75439, 2.22273, -1.78894, -2.72709)
 visible = false
 script = ExtResource("5_rpf03")
@@ -2458,13 +2458,13 @@ ammo = -1
 attack_rate = 0.5
 weapon_type = 1
 
-[node name="Graphics" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife"]
+[node name="Graphics" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife" unique_id=161072054]
 transform = Transform3D(0.999998, -4.45673e-09, 0, 1.04478e-08, 0.999999, 6.54836e-11, -4.65661e-10, 0, 0.999999, -0.222783, 0.0481216, 0.552132)
 
-[node name="Bones" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics"]
+[node name="Bones" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics" unique_id=289509100]
 transform = Transform3D(-0.158639, 2.86657, 0.5564, -0.257217, 0.541336, -2.8623, -2.90872, -0.20421, 0.222767, -3.9142, 0.795269, 1.85953)
 
-[node name="Skeleton3D" type="Skeleton3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics/Bones"]
+[node name="Skeleton3D" type="Skeleton3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics/Bones" unique_id=1705832606]
 bones/0/name = "Root"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.42329, 0)
@@ -2732,58 +2732,56 @@ bones/37/position = Vector3(0.0920737, 0.134059, -0.027655)
 bones/37/rotation = Quaternion(0.511918, -0.503554, 0.476368, 0.507392)
 bones/37/scale = Vector3(0.198241, 0.198241, 0.198241)
 
-[node name="Cylinder" type="BoneAttachment3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics/Bones/Skeleton3D"]
-transform = Transform3D(-0.0234552, -0.054025, -0.18929, 0.173806, 0.0838121, -0.0454573, 0.0924158, -0.171337, 0.0374496, 0.690138, 1.44446, 0.376918)
+[node name="Cylinder" type="BoneAttachment3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics/Bones/Skeleton3D" unique_id=1677776873]
+transform = Transform3D(-0.023455193, -0.05402496, -0.18928984, 0.17380643, 0.08381205, -0.04545731, 0.09241581, -0.17133689, 0.037449624, 0.69013786, 1.4444641, 0.376918)
 bone_name = "Cylinder"
 bone_idx = 37
 
-[node name="Cylinder" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics/Bones/Skeleton3D/Cylinder"]
+[node name="Cylinder" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics/Bones/Skeleton3D/Cylinder" unique_id=1216595349]
 layers = 2
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_usbl8")
-skeleton = NodePath("")
 
-[node name="Arms" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics/Bones/Skeleton3D"]
+[node name="Arms" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics/Bones/Skeleton3D" unique_id=1400544250]
 layers = 2
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_dtg1u")
 skin = SubResource("Skin_nuaet")
+skeleton = NodePath("..")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics"]
-libraries = {
-&"": SubResource("AnimationLibrary_esr06")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/Graphics" unique_id=1527241697]
+libraries/ = SubResource("AnimationLibrary_esr06")
 
-[node name="BulletEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife" instance=ExtResource("5_8l73k")]
+[node name="BulletEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife" unique_id=217406789 instance=ExtResource("5_8l73k")]
 
-[node name="HitScanBulletEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/BulletEmitter" instance=ExtResource("8_3t07l")]
+[node name="HitScanBulletEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/BulletEmitter" unique_id=1818312820 instance=ExtResource("8_3t07l")]
 
-[node name="RayCast3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/BulletEmitter/HitScanBulletEmitter" index="0"]
+[node name="RayCast3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/BulletEmitter/HitScanBulletEmitter" index="0" unique_id=1826574052]
 target_position = Vector3(0, 0, -22)
 
-[node name="EquipSound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife"]
+[node name="EquipSound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife" unique_id=222242810]
 stream = ExtResource("8_xuaoq")
 pitch_scale = 0.84
 bus = &"PlayerSounds"
 
-[node name="AttackSounds" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife"]
+[node name="AttackSounds" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife" unique_id=1668365319]
 script = ExtResource("8_0gysh")
 
-[node name="AttackSound1" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/AttackSounds"]
+[node name="AttackSound1" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/AttackSounds" unique_id=1231407941]
 stream = ExtResource("9_vfarp")
 bus = &"ShootingSounds"
 
-[node name="AttackSound2" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/AttackSounds"]
+[node name="AttackSound2" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/AttackSounds" unique_id=1066803406]
 stream = ExtResource("9_vfarp")
 pitch_scale = 1.55
 bus = &"ShootingSounds"
 
-[node name="AttackSound3" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/AttackSounds"]
+[node name="AttackSound3" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Knife/AttackSounds" unique_id=1497797068]
 stream = ExtResource("9_vfarp")
 pitch_scale = 1.83
 bus = &"ShootingSounds"
 
-[node name="Makarov" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons" node_paths=PackedStringArray("animation_player", "muzzle_flash", "hitscan_emitter")]
+[node name="Makarov" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons" unique_id=932152065 node_paths=PackedStringArray("animation_player", "muzzle_flash", "hitscan_emitter")]
 transform = Transform3D(-0.0839177, -4.03984e-09, -1.55, -7.47268e-08, 1.55227, -1.05222e-15, 1.55, 7.46175e-08, -0.0839177, 1.91417, -1.76756, -3.80472)
 script = ExtResource("5_rpf03")
 animation_player = NodePath("Graphics/AnimationPlayer")
@@ -2793,12 +2791,12 @@ max_ammo = 15
 muzzle_flash = NodePath("Graphics/Bones/Skeleton3D/Cube/Cube/MuzzleFlash")
 hitscan_emitter = NodePath("BulletEmitter/HitScanBulletEmitter")
 
-[node name="Graphics" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov"]
+[node name="Graphics" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov" unique_id=96434469]
 
-[node name="Bones" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics"]
+[node name="Bones" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics" unique_id=184372003]
 transform = Transform3D(-3.36643, -1.62298e-07, -0.182261, -1.62061e-07, 3.37136, -8.7741e-09, 0.182261, -3.86561e-14, -3.36643, 3.27448, -4.37463, 1.60558)
 
-[node name="Skeleton3D" type="Skeleton3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics/Bones"]
+[node name="Skeleton3D" type="Skeleton3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics/Bones" unique_id=1078479726]
 bones/0/name = "Root"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.42329, 0)
@@ -3066,65 +3064,63 @@ bones/37/position = Vector3(-0.0342659, 0.186631, -0.0327045)
 bones/37/rotation = Quaternion(0.710227, -0.703973, -2.15144e-05, 2.13704e-05)
 bones/37/scale = Vector3(0.0316792, 0.0316792, 0.0316792)
 
-[node name="Cube" type="BoneAttachment3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics/Bones/Skeleton3D"]
-transform = Transform3D(-0.0316252, 0.000126324, -0.00184365, 0.000102832, 0.0316764, 0.000406224, 0.00184511, 0.000399547, -0.0316229, 0.695452, 1.45613, 0.28208)
+[node name="Cube" type="BoneAttachment3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics/Bones/Skeleton3D" unique_id=801283699]
+transform = Transform3D(-0.03162525, 0.00012632416, -0.0018436516, 0.00010283232, 0.03167642, 0.00040622367, 0.0018451102, 0.0003995468, -0.031622894, 0.69545215, 1.4561282, 0.2820797)
 bone_name = "Cube"
 bone_idx = 37
 
-[node name="Cube" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics/Bones/Skeleton3D/Cube"]
+[node name="Cube" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics/Bones/Skeleton3D/Cube" unique_id=2031516083]
 layers = 2
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_6b312")
-skeleton = NodePath("")
 
-[node name="MuzzleFlash" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics/Bones/Skeleton3D/Cube/Cube" instance=ExtResource("6_gqopd")]
+[node name="MuzzleFlash" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics/Bones/Skeleton3D/Cube/Cube" unique_id=523616741 instance=ExtResource("6_gqopd")]
 transform = Transform3D(9.30402, 0.030398, -1.04987, -0.0436621, 9.36231, -0.1159, 1.0494, 0.120064, 9.30335, -4.53413, 2.35811, -0.0647621)
 
-[node name="Arms" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics/Bones/Skeleton3D"]
+[node name="Arms" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics/Bones/Skeleton3D" unique_id=1392948587]
 layers = 2
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_lisdf")
 skin = SubResource("Skin_n1x1j")
+skeleton = NodePath("..")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics"]
-libraries = {
-&"": SubResource("AnimationLibrary_dqyri")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/Graphics" unique_id=231109063]
+libraries/ = SubResource("AnimationLibrary_dqyri")
 
-[node name="BulletEmitter" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov"]
+[node name="BulletEmitter" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov" unique_id=424173683]
 script = ExtResource("7_x5dtk")
 metadata/_custom_type_script = "uid://ddrakx2w0xfud"
 
-[node name="HitScanBulletEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/BulletEmitter" node_paths=PackedStringArray("muzzle_flash") instance=ExtResource("8_3t07l")]
+[node name="HitScanBulletEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/BulletEmitter" unique_id=293892834 node_paths=PackedStringArray("muzzle_flash") instance=ExtResource("8_3t07l")]
 muzzle_flash = NodePath("../../Graphics/Bones/Skeleton3D/Cube/Cube/MuzzleFlash")
 
-[node name="EquipSound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov"]
+[node name="EquipSound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov" unique_id=1232913242]
 stream = ExtResource("15_wohnl")
 bus = &"PlayerSounds"
 
-[node name="EmptySound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov"]
+[node name="EmptySound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov" unique_id=295578929]
 stream = ExtResource("16_36dho")
 bus = &"PlayerSounds"
 
-[node name="AttackSounds" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov"]
+[node name="AttackSounds" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov" unique_id=1478505451]
 script = ExtResource("8_0gysh")
 
-[node name="AttackSound1" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/AttackSounds"]
+[node name="AttackSound1" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/AttackSounds" unique_id=1223261642]
 stream = ExtResource("14_y6uwr")
 pitch_scale = 1.16
 bus = &"ShootingSounds"
 
-[node name="AttackSound2" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/AttackSounds"]
+[node name="AttackSound2" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/AttackSounds" unique_id=1416098470]
 stream = ExtResource("14_y6uwr")
 pitch_scale = 1.55
 bus = &"ShootingSounds"
 
-[node name="AttackSound3" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/AttackSounds"]
+[node name="AttackSound3" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Makarov/AttackSounds" unique_id=152159991]
 stream = ExtResource("14_y6uwr")
 pitch_scale = 1.93
 bus = &"ShootingSounds"
 
-[node name="M4A1" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons" node_paths=PackedStringArray("animation_player", "muzzle_flash", "hitscan_emitter")]
+[node name="M4A1" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons" unique_id=2062006877 node_paths=PackedStringArray("animation_player", "muzzle_flash", "hitscan_emitter")]
 transform = Transform3D(0.00955745, 8.3554e-10, 0.12331, 1.08124e-08, -0.12368, 2.98346e-16, 0.12331, 1.07801e-08, -0.00955745, 1.32162, -0.98427, -2.63752)
 visible = false
 script = ExtResource("5_rpf03")
@@ -3135,12 +3131,12 @@ muzzle_flash = NodePath("Graphics/Bones/Skeleton3D/Cube/MuzzleFlash")
 hitscan_emitter = NodePath("BulletEmitter/HitScanBulletEmitter")
 weapon_type = 3
 
-[node name="Graphics" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1"]
+[node name="Graphics" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1" unique_id=1004884735]
 
-[node name="Bones" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics"]
+[node name="Bones" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics" unique_id=1601546565]
 transform = Transform3D(-69.9887, -6.10009e-06, 10.9149, 6.24802e-06, -70.8348, 4.75675e-07, 10.9149, 1.43274e-06, 69.9887, 49.9765, 112.891, -21.4145)
 
-[node name="Skeleton3D" type="Skeleton3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics/Bones"]
+[node name="Skeleton3D" type="Skeleton3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics/Bones" unique_id=1695345636]
 bones/0/name = "Root"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.42329, 0)
@@ -3408,65 +3404,63 @@ bones/37/position = Vector3(-0.0762829, 0.260199, 0.0246361)
 bones/37/rotation = Quaternion(0.037695, -0.161028, 0.692052, 0.702647)
 bones/37/scale = Vector3(-0.0195547, -0.0195547, -0.0195547)
 
-[node name="Cube" type="BoneAttachment3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics/Bones/Skeleton3D"]
-transform = Transform3D(-0.0195458, -1.05705e-07, -0.000588686, 1.01805e-07, -0.0195547, 7.07805e-08, 0.000588686, -6.82194e-08, -0.0195458, 0.771683, 1.57271, 0.215415)
+[node name="Cube" type="BoneAttachment3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics/Bones/Skeleton3D" unique_id=1933188998]
+transform = Transform3D(-0.019545838, -1.0570511e-07, -0.0005886862, 1.018052e-07, -0.019554697, 7.0780516e-08, 0.0005886862, -6.821938e-08, -0.01954584, 0.77168274, 1.5727074, 0.21541525)
 bone_name = "Cube"
 bone_idx = 37
 
-[node name="Cube" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics/Bones/Skeleton3D/Cube"]
+[node name="Cube" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics/Bones/Skeleton3D/Cube" unique_id=2017489097]
 layers = 2
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_c8b32")
-skeleton = NodePath("")
 
-[node name="MuzzleFlash" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics/Bones/Skeleton3D/Cube" instance=ExtResource("6_gqopd")]
+[node name="MuzzleFlash" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics/Bones/Skeleton3D/Cube" unique_id=2109853365 instance=ExtResource("6_gqopd")]
 transform = Transform3D(0.708817, -3.88911e-06, -0.137034, 3.25514e-06, 0.721942, -3.30195e-06, -0.137034, -2.64584e-06, -0.708817, -25.731, -1.16917, 0.0324249)
 
-[node name="Arms" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics/Bones/Skeleton3D"]
+[node name="Arms" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics/Bones/Skeleton3D" unique_id=786876866]
 layers = 2
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_nj1g2")
 skin = SubResource("Skin_usbl8")
+skeleton = NodePath("..")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics"]
-libraries = {
-&"": SubResource("AnimationLibrary_4xish")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/Graphics" unique_id=1334275638]
+libraries/ = SubResource("AnimationLibrary_4xish")
 
-[node name="BulletEmitter" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1"]
+[node name="BulletEmitter" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1" unique_id=1866856567]
 script = ExtResource("7_x5dtk")
 metadata/_custom_type_script = "uid://ddrakx2w0xfud"
 
-[node name="HitScanBulletEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/BulletEmitter" node_paths=PackedStringArray("muzzle_flash") instance=ExtResource("8_3t07l")]
+[node name="HitScanBulletEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/BulletEmitter" unique_id=1992864474 node_paths=PackedStringArray("muzzle_flash") instance=ExtResource("8_3t07l")]
 muzzle_flash = NodePath("../../Graphics/Bones/Skeleton3D/Cube/MuzzleFlash")
 
-[node name="EquipSound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1"]
+[node name="EquipSound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1" unique_id=1030369679]
 stream = ExtResource("15_wohnl")
 bus = &"PlayerSounds"
 
-[node name="EmptySound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1"]
+[node name="EmptySound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1" unique_id=494857704]
 stream = ExtResource("16_36dho")
 bus = &"PlayerSounds"
 
-[node name="AttackSounds" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1"]
+[node name="AttackSounds" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1" unique_id=1528220208]
 script = ExtResource("8_0gysh")
 
-[node name="AttackSound1" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/AttackSounds"]
+[node name="AttackSound1" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/AttackSounds" unique_id=107252259]
 stream = ExtResource("16_y6uwr")
 pitch_scale = 1.16
 bus = &"ShootingSounds"
 
-[node name="AttackSound2" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/AttackSounds"]
+[node name="AttackSound2" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/AttackSounds" unique_id=335969129]
 stream = ExtResource("16_y6uwr")
 pitch_scale = 1.55
 bus = &"ShootingSounds"
 
-[node name="AttackSound3" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/AttackSounds"]
+[node name="AttackSound3" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/M4A1/AttackSounds" unique_id=1176369358]
 stream = ExtResource("16_y6uwr")
 pitch_scale = 1.93
 bus = &"ShootingSounds"
 
-[node name="Shotgun" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons" node_paths=PackedStringArray("animation_player", "muzzle_flash", "hitscan_emitter")]
+[node name="Shotgun" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons" unique_id=771119843 node_paths=PackedStringArray("animation_player", "muzzle_flash", "hitscan_emitter")]
 transform = Transform3D(-1.19592e-09, 0.0273596, 1.48852, -1.48878, -6.50764e-08, -8.66052e-16, 6.50654e-08, -1.48852, 0.0273596, 0.796309, -0.893763, -1.5273)
 visible = false
 script = ExtResource("5_rpf03")
@@ -3478,13 +3472,13 @@ muzzle_flash = NodePath("Graphics/Bones/Skeleton3D/Cylinder_002/Cylinder_002/Muz
 hitscan_emitter = NodePath("BulletEmitter/BurstEmitter/SprayEmitter/HitScanBulletEmitter")
 weapon_type = 4
 
-[node name="Graphics" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun"]
+[node name="Graphics" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun" unique_id=1053073726]
 transform = Transform3D(1, -7.45058e-09, 2.32831e-10, 0, 1, 7.45058e-09, -2.32831e-10, 0, 1, 0, 0, 0)
 
-[node name="Bones" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics"]
+[node name="Bones" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics" unique_id=1561176889]
 transform = Transform3D(-1.72862e-07, -3.96725, 0.0729198, 3.95393, -0.00611842, -0.332868, 0.332924, 0.0726625, 3.95326, 6.02759, -3.11542, -1.28291)
 
-[node name="Skeleton3D" type="Skeleton3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics/Bones"]
+[node name="Skeleton3D" type="Skeleton3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics/Bones" unique_id=917077100]
 bones/0/name = "Root"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.42329, 0)
@@ -3752,82 +3746,78 @@ bones/37/position = Vector3(-0.0354658, 0.252618, 0.0107403)
 bones/37/rotation = Quaternion(0.116084, -0.0869974, -0.00964624, 0.989375)
 bones/37/scale = Vector3(0.259254, 0.259254, 0.259253)
 
-[node name="Cylinder_002" type="BoneAttachment3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics/Bones/Skeleton3D"]
-transform = Transform3D(2.30037e-07, 0.258434, 0.0206093, -0.259254, 2.41213e-07, -1.9744e-07, -2.19792e-07, -0.0206094, 0.258433, 0.759593, 1.53458, 0.197619)
+[node name="Cylinder_002" type="BoneAttachment3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics/Bones/Skeleton3D" unique_id=1418230624]
+transform = Transform3D(2.3003668e-07, 0.25843355, 0.020609342, -0.25925395, 2.4121255e-07, -1.9744039e-07, -2.1979213e-07, -0.020609405, 0.25843254, 0.7595935, 1.5345831, 0.19761944)
 bone_name = "Cylinder.002"
 bone_idx = 37
 
-[node name="Cylinder_002" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics/Bones/Skeleton3D/Cylinder_002"]
+[node name="Cylinder_002" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics/Bones/Skeleton3D/Cylinder_002" unique_id=514101430]
 layers = 2
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_m376e")
-skeleton = NodePath("")
 
-[node name="MuzzleFlash" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics/Bones/Skeleton3D/Cylinder_002/Cylinder_002" instance=ExtResource("6_gqopd")]
+[node name="MuzzleFlash" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics/Bones/Skeleton3D/Cylinder_002/Cylinder_002" unique_id=177250599 instance=ExtResource("6_gqopd")]
 transform = Transform3D(0.971937, 0.0178024, 0.00149986, -0.00142112, -0.00431327, 0.972091, 0.0178089, -0.971933, -0.00428659, -0.19555, 2.79391, -0.0110193)
 
-[node name="Arms" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics/Bones/Skeleton3D"]
+[node name="Arms" type="MeshInstance3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics/Bones/Skeleton3D" unique_id=986875572]
 layers = 2
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_n1x1j")
 skin = SubResource("Skin_c8b32")
+skeleton = NodePath("..")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics"]
-libraries = {
-&"": SubResource("AnimationLibrary_d2jip")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/Graphics" unique_id=1000395434]
+libraries/ = SubResource("AnimationLibrary_d2jip")
 
-[node name="BulletEmitter" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun"]
+[node name="BulletEmitter" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun" unique_id=260249751]
 script = ExtResource("7_x5dtk")
 metadata/_custom_type_script = "uid://ddrakx2w0xfud"
 
-[node name="BurstEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/BulletEmitter" instance=ExtResource("12_58jvb")]
+[node name="BurstEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/BulletEmitter" unique_id=96546844 instance=ExtResource("12_58jvb")]
 transform = Transform3D(1, 3.55271e-15, -5.55112e-17, 0, 1, 1.86265e-09, 5.55112e-17, -1.86265e-09, 1, 0, 0, 0)
 
-[node name="SprayEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/BulletEmitter/BurstEmitter" instance=ExtResource("13_8l73k")]
+[node name="SprayEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/BulletEmitter/BurstEmitter" unique_id=2132677411 instance=ExtResource("13_8l73k")]
 transform = Transform3D(1, 3.55271e-15, -5.55112e-17, 0, 1, 1.86265e-09, 5.55112e-17, -1.86265e-09, 1, 0, 0, 0)
 
-[node name="HitScanBulletEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/BulletEmitter/BurstEmitter/SprayEmitter" node_paths=PackedStringArray("muzzle_flash") instance=ExtResource("8_3t07l")]
+[node name="HitScanBulletEmitter" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/BulletEmitter/BurstEmitter/SprayEmitter" unique_id=713056227 node_paths=PackedStringArray("muzzle_flash") instance=ExtResource("8_3t07l")]
 muzzle_flash = NodePath("../../../../Graphics/Bones/Skeleton3D/Cylinder_002/Cylinder_002/MuzzleFlash")
 
-[node name="EquipSound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun"]
+[node name="EquipSound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun" unique_id=678907912]
 stream = ExtResource("15_wohnl")
 bus = &"PlayerSounds"
 
-[node name="EmptySound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun"]
+[node name="EmptySound" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun" unique_id=835728779]
 stream = ExtResource("16_36dho")
 bus = &"PlayerSounds"
 
-[node name="ShotgunCock" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun"]
+[node name="ShotgunCock" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun" unique_id=1999461550]
 stream = ExtResource("24_wohnl")
 bus = &"ShootingSounds"
 
-[node name="AttackSounds" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun"]
+[node name="AttackSounds" type="Node3D" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun" unique_id=1046356664]
 script = ExtResource("8_0gysh")
 
-[node name="AttackSound1" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/AttackSounds"]
+[node name="AttackSound1" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/AttackSounds" unique_id=70055492]
 stream = ExtResource("20_83xs0")
 pitch_scale = 1.16
 bus = &"ShootingSounds"
 
-[node name="AttackSound2" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/AttackSounds"]
+[node name="AttackSound2" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/AttackSounds" unique_id=281929501]
 stream = ExtResource("20_83xs0")
 pitch_scale = 1.55
 bus = &"ShootingSounds"
 
-[node name="AttackSound3" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/AttackSounds"]
+[node name="AttackSound3" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/WeaponManager/Weapons/Shotgun/AttackSounds" unique_id=311217834]
 stream = ExtResource("20_83xs0")
 pitch_scale = 1.93
 bus = &"ShootingSounds"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/WeaponManager"]
-libraries = {
-&"": SubResource("AnimationLibrary_f5f5t")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/WeaponManager" unique_id=119852061]
+libraries/ = SubResource("AnimationLibrary_f5f5t")
 
-[node name="PlayerUILayer" type="CanvasLayer" parent="CameraRoot/Camera3D"]
+[node name="PlayerUILayer" type="CanvasLayer" parent="CameraRoot/Camera3D" unique_id=803890222]
 
-[node name="DeathScreen" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer"]
+[node name="DeathScreen" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer" unique_id=1791490710]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -3837,7 +3827,7 @@ grow_vertical = 2
 script = ExtResource("18_fs7ks")
 lose_phrases = ["DEATH_1", "DEATH_2", "DEATH_3", "DEATH_4", "DEATH_5", "DEATH_6", "DEATH_7", "DEATH_8", "DEATH_9"]
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen" unique_id=341574874]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -3846,7 +3836,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.541176)
 
-[node name="LoseLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen"]
+[node name="LoseLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen" unique_id=1658755818]
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 10
@@ -3858,7 +3848,7 @@ label_settings = SubResource("LabelSettings_qvbpb")
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="YouLoseLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen"]
+[node name="YouLoseLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen" unique_id=1047596269]
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 10
@@ -3871,13 +3861,11 @@ label_settings = SubResource("LabelSettings_l6n3p")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen"]
-libraries = {
-&"": SubResource("AnimationLibrary_bi64h")
-}
-autoplay = "intro"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen" unique_id=1113479305]
+libraries/ = SubResource("AnimationLibrary_bi64h")
+autoplay = &"intro"
 
-[node name="Restart" type="Panel" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen"]
+[node name="Restart" type="Panel" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen" unique_id=1060836528]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -3892,7 +3880,7 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(200, 50)
 
-[node name="Label" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/Restart"]
+[node name="Label" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/Restart" unique_id=2118667313]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -3904,7 +3892,7 @@ label_settings = SubResource("LabelSettings_2ijsl")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/Restart"]
+[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/Restart" unique_id=1622501993]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -3913,7 +3901,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GameStatsPanel" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen"]
+[node name="GameStatsPanel" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen" unique_id=208234014]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -3929,7 +3917,7 @@ grow_vertical = 2
 pivot_offset = Vector2(325, 150)
 script = ExtResource("34_awsf5")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel" unique_id=623551588]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -3941,7 +3929,7 @@ grow_vertical = 2
 pivot_offset = Vector2(325, 150)
 color = Color(0, 0, 0, 0.492)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/ColorRect"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/ColorRect" unique_id=1323848690]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -3950,7 +3938,7 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="WaveLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/ColorRect/VBoxContainer"]
+[node name="WaveLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/ColorRect/VBoxContainer" unique_id=1701426461]
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 text = "Волн пройдено: 0"
@@ -3958,7 +3946,7 @@ label_settings = SubResource("LabelSettings_awsf5")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="KillsLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/ColorRect/VBoxContainer"]
+[node name="KillsLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/ColorRect/VBoxContainer" unique_id=1081765183]
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 text = "Убито зомби: 0"
@@ -3966,7 +3954,7 @@ label_settings = SubResource("LabelSettings_awsf5")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PointsLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/ColorRect/VBoxContainer"]
+[node name="PointsLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/ColorRect/VBoxContainer" unique_id=1759302766]
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 text = "Очков набрано: 0"
@@ -3974,7 +3962,7 @@ label_settings = SubResource("LabelSettings_awsf5")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TimeLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/ColorRect/VBoxContainer"]
+[node name="TimeLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/ColorRect/VBoxContainer" unique_id=1912964917]
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 text = "Время игры: 0"
@@ -3982,7 +3970,7 @@ label_settings = SubResource("LabelSettings_awsf5")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="RecordColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel"]
+[node name="RecordColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel" unique_id=2066313175]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -3994,7 +3982,7 @@ grow_vertical = 2
 pivot_offset = Vector2(150, 150)
 color = Color(0, 0, 0, 0.492)
 
-[node name="RecordVBoxContainer" type="VBoxContainer" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/RecordColorRect"]
+[node name="RecordVBoxContainer" type="VBoxContainer" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/RecordColorRect" unique_id=1587741972]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4004,7 +3992,7 @@ offset_bottom = -37.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="RecordWaveLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/RecordColorRect/RecordVBoxContainer"]
+[node name="RecordWaveLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/RecordColorRect/RecordVBoxContainer" unique_id=508179566]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 text = "Волн пройдено: 0"
@@ -4012,7 +4000,7 @@ label_settings = SubResource("LabelSettings_v84ne")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="RecordKillsLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/RecordColorRect/RecordVBoxContainer"]
+[node name="RecordKillsLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/RecordColorRect/RecordVBoxContainer" unique_id=1465629084]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 text = "Убито зомби: 0"
@@ -4020,7 +4008,7 @@ label_settings = SubResource("LabelSettings_v84ne")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="RecordPointsLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/RecordColorRect/RecordVBoxContainer"]
+[node name="RecordPointsLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/RecordColorRect/RecordVBoxContainer" unique_id=448152634]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 text = "Очков набрано: 0"
@@ -4028,7 +4016,7 @@ label_settings = SubResource("LabelSettings_v84ne")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/RecordColorRect"]
+[node name="Label" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/DeathScreen/GameStatsPanel/RecordColorRect" unique_id=1262477560]
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 1
 anchors_preset = 10
@@ -4041,7 +4029,7 @@ label_settings = SubResource("LabelSettings_4pcjl")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="StatsDisplay" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer"]
+[node name="StatsDisplay" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer" unique_id=920454410]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -4050,7 +4038,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("20_olqyp")
 
-[node name="BloodScreen" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
+[node name="BloodScreen" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=1148607656]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4059,7 +4047,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("36_bqbau")
 
-[node name="FrozenScreen" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
+[node name="FrozenScreen" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=1762752624]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -4069,7 +4057,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("37_f5f5t")
 
-[node name="BloodScreen_1" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
+[node name="BloodScreen_1" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=836309040]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -4079,7 +4067,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("40_1htnp")
 
-[node name="WaveProgressBar" type="TextureProgressBar" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
+[node name="WaveProgressBar" type="TextureProgressBar" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=1745651629]
 visible = false
 modulate = Color(1, 1, 1, 0.807843)
 layout_mode = 1
@@ -4096,7 +4084,7 @@ value = 20.0
 texture_under = SubResource("GradientTexture2D_bi64h")
 texture_progress = SubResource("GradientTexture2D_p1odr")
 
-[node name="WaveLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
+[node name="WaveLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=2128313603]
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.0138889
@@ -4110,7 +4098,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="TimerLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
+[node name="TimerLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=1291342275]
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.0597222
@@ -4123,7 +4111,7 @@ label_settings = SubResource("LabelSettings_f5f5t")
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="PointLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
+[node name="PointLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=771606523]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -4137,14 +4125,12 @@ label_settings = SubResource("LabelSettings_0gysh")
 horizontal_alignment = 2
 vertical_alignment = 1
 
-[node name="OverlayAnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
-libraries = {
-&"": SubResource("AnimationLibrary_sscpr")
-}
+[node name="OverlayAnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=883299838]
+libraries/ = SubResource("AnimationLibrary_sscpr")
 
-[node name="HealthBar" type="TextureProgressBar" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
+[node name="HealthBar" type="TextureProgressBar" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=1794609288]
 modulate = Color(1, 1, 1, 0.807843)
-layout_mode = 2
+layout_mode = 0
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 17.0
@@ -4157,7 +4143,7 @@ value = 20.0
 texture_under = SubResource("GradientTexture2D_y6uwr")
 texture_progress = SubResource("GradientTexture2D_ypfnu")
 
-[node name="HealthLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay/HealthBar"]
+[node name="HealthLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay/HealthBar" unique_id=1156576560]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4171,9 +4157,9 @@ label_settings = SubResource("LabelSettings_xuaoq")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AmmoBar" type="TextureProgressBar" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
+[node name="AmmoBar" type="TextureProgressBar" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=2060257194]
 modulate = Color(1, 1, 1, 0.807843)
-layout_mode = 2
+layout_mode = 0
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 17.0
@@ -4185,7 +4171,7 @@ value = 20.0
 texture_under = SubResource("GradientTexture2D_36dho")
 texture_progress = SubResource("GradientTexture2D_nv4vc")
 
-[node name="AmmoLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay/AmmoBar"]
+[node name="AmmoLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay/AmmoBar" unique_id=154903951]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4199,7 +4185,7 @@ label_settings = SubResource("LabelSettings_xuaoq")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="FrozenIndicator" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
+[node name="FrozenIndicator" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=966287895]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 2
@@ -4212,20 +4198,18 @@ offset_bottom = -94.0
 grow_vertical = 0
 color = Color(0.0901961, 0.0901961, 0.0901961, 0.784314)
 
-[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay/FrozenIndicator"]
+[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay/FrozenIndicator" unique_id=406499701]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("39_qvbpb")
 expand_mode = 1
 
-[node name="IndicatorAnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay/FrozenIndicator"]
+[node name="IndicatorAnimationPlayer" type="AnimationPlayer" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay/FrozenIndicator" unique_id=847764837]
 unique_name_in_owner = true
-libraries = {
-&"": SubResource("AnimationLibrary_ss172")
-}
+libraries/ = SubResource("AnimationLibrary_ss172")
 
-[node name="Crosshair" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay"]
+[node name="Crosshair" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/StatsDisplay" unique_id=674465058]
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 1
 anchors_preset = 8
@@ -4244,7 +4228,7 @@ size_flags_vertical = 4
 texture = ExtResource("15_qqcod")
 metadata/_edit_use_anchors_ = true
 
-[node name="PauseMenu" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer"]
+[node name="PauseMenu" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer" unique_id=1980391856]
 visible = false
 layout_mode = 3
 anchors_preset = 15
@@ -4254,7 +4238,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("34_xwi16")
 
-[node name="ColorRect2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu"]
+[node name="ColorRect2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu" unique_id=975039280]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4263,7 +4247,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.160784)
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu" unique_id=696059773]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -4278,7 +4262,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.588235)
 
-[node name="SettingsLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect"]
+[node name="SettingsLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect" unique_id=968710543]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -4297,7 +4281,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="SettingsButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect/SettingsLabel"]
+[node name="SettingsButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect/SettingsLabel" unique_id=398804503]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -4306,7 +4290,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ContinueLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect"]
+[node name="ContinueLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect" unique_id=890763412]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -4319,7 +4303,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="ContinueButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect/ContinueLabel"]
+[node name="ContinueButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect/ContinueLabel" unique_id=2087052566]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -4328,7 +4312,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ToMenuLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect"]
+[node name="ToMenuLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect" unique_id=597433169]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -4347,7 +4331,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="ToMenuButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect/ToMenuLabel"]
+[node name="ToMenuButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu/ColorRect/ToMenuLabel" unique_id=964049722]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -4356,11 +4340,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="KnpClick" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu"]
+[node name="KnpClick" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/PlayerUILayer/PauseMenu" unique_id=1441067614]
 stream = ExtResource("35_sweqm")
 bus = &"PlayerSounds"
 
-[node name="ShopMenu" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer" node_paths=PackedStringArray("player", "weapon_manager")]
+[node name="ShopMenu" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer" unique_id=1797411204 node_paths=PackedStringArray("player", "weapon_manager")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 3
@@ -4374,7 +4358,7 @@ script = ExtResource("36_3vlem")
 player = NodePath("../../../..")
 weapon_manager = NodePath("../../WeaponManager")
 
-[node name="BackgroundColor" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu"]
+[node name="BackgroundColor" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu" unique_id=1845797297]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4383,7 +4367,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.160784)
 
-[node name="ShopColor" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu"]
+[node name="ShopColor" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu" unique_id=1592951663]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -4399,7 +4383,7 @@ grow_vertical = 2
 mouse_filter = 1
 color = Color(0, 0, 0, 0.588235)
 
-[node name="PointLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor"]
+[node name="PointLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor" unique_id=2083936026]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -4414,7 +4398,7 @@ label_settings = SubResource("LabelSettings_57lvd")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="SlotsBackground" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor"]
+[node name="SlotsBackground" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor" unique_id=1208311526]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4424,7 +4408,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.160784)
 
-[node name="PerkDescBackground" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor"]
+[node name="PerkDescBackground" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor" unique_id=1914473714]
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
@@ -4437,7 +4421,7 @@ grow_horizontal = 0
 grow_vertical = 2
 color = Color(0, 0, 0, 0.386)
 
-[node name="IconBackground" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/PerkDescBackground"]
+[node name="IconBackground" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/PerkDescBackground" unique_id=346941756]
 custom_minimum_size = Vector2(135, 135)
 layout_mode = 1
 anchors_preset = 5
@@ -4450,7 +4434,7 @@ offset_bottom = 170.0
 grow_horizontal = 2
 color = Color(0, 0, 0, 0.607)
 
-[node name="Icon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/PerkDescBackground"]
+[node name="Icon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/PerkDescBackground" unique_id=1640571333]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(135, 135)
 layout_mode = 1
@@ -4464,7 +4448,7 @@ offset_bottom = 170.0
 grow_horizontal = 2
 texture = ExtResource("49_5cld6")
 
-[node name="NameLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/PerkDescBackground"]
+[node name="NameLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/PerkDescBackground" unique_id=1757957843]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 10
@@ -4477,7 +4461,7 @@ label_settings = SubResource("LabelSettings_hseb1")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="DescLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/PerkDescBackground"]
+[node name="DescLabel" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/PerkDescBackground" unique_id=1395427975]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 10
@@ -4491,7 +4475,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Container" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor"]
+[node name="Container" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor" unique_id=2095897511]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -4506,15 +4490,15 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 
-[node name="PlayerSlot" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container"]
-layout_mode = 2
+[node name="PlayerSlot" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container" unique_id=1527021274]
+layout_mode = 0
 offset_left = -130.0
 offset_top = -70.0
 offset_right = 30.0
 offset_bottom = 20.0
 color = Color(0.27, 0.1, 0, 1)
 
-[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerSlot"]
+[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerSlot" unique_id=306770604]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -4530,7 +4514,7 @@ grow_vertical = 2
 texture = ExtResource("43_6hq81")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerSlot"]
+[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerSlot" unique_id=827880873]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -4540,15 +4524,15 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="KnifeSlot" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container"]
-layout_mode = 2
+[node name="KnifeSlot" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container" unique_id=59211042]
+layout_mode = 0
 offset_left = -130.0
 offset_top = 20.0
 offset_right = 30.0
 offset_bottom = 110.0
 color = Color(0, 0, 0, 0.611765)
 
-[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeSlot"]
+[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeSlot" unique_id=1365307133]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -4564,7 +4548,7 @@ grow_vertical = 2
 texture = ExtResource("44_5cld6")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeSlot"]
+[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeSlot" unique_id=1203103607]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -4574,15 +4558,15 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="PistolSlot" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container"]
-layout_mode = 2
+[node name="PistolSlot" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container" unique_id=521390225]
+layout_mode = 0
 offset_left = -130.0
 offset_top = 110.0
 offset_right = 30.0
 offset_bottom = 200.0
 color = Color(0, 0, 0, 0.611765)
 
-[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolSlot"]
+[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolSlot" unique_id=661744507]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -4598,7 +4582,7 @@ grow_vertical = 2
 texture = ExtResource("37_8eeqe")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolSlot"]
+[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolSlot" unique_id=1052576100]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -4607,15 +4591,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="M16Slot" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container"]
-layout_mode = 2
+[node name="M16Slot" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container" unique_id=2136122206]
+layout_mode = 0
 offset_left = -130.0
 offset_top = 200.0
 offset_right = 30.0
 offset_bottom = 290.0
 color = Color(0, 0, 0, 0.611765)
 
-[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Slot"]
+[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Slot" unique_id=1788052403]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -4631,7 +4615,7 @@ grow_vertical = 2
 texture = ExtResource("36_ax3m3")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Slot"]
+[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Slot" unique_id=289340499]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -4641,7 +4625,7 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Slot"]
+[node name="Label" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Slot" unique_id=1018153273]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -4657,15 +4641,15 @@ label_settings = SubResource("LabelSettings_3vlem")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ShotgunSlot" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container"]
-layout_mode = 2
+[node name="ShotgunSlot" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container" unique_id=102737835]
+layout_mode = 0
 offset_left = -130.0
 offset_top = 290.0
 offset_right = 30.0
 offset_bottom = 380.0
 color = Color(0, 0, 0, 0.611765)
 
-[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunSlot"]
+[node name="TextureRect" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunSlot" unique_id=1447847589]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -4681,7 +4665,7 @@ grow_vertical = 2
 texture = ExtResource("37_3vlem")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunSlot"]
+[node name="Button" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunSlot" unique_id=111778875]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -4691,7 +4675,7 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunSlot"]
+[node name="Label" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunSlot" unique_id=104149159]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -4707,12 +4691,12 @@ label_settings = SubResource("LabelSettings_3vlem")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Buying" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container"]
+[node name="Buying" type="AudioStreamPlayer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container" unique_id=1029461274]
 stream = ExtResource("43_8eeqe")
 volume_db = -10.0
 bus = &"PlayerSounds"
 
-[node name="PlayerUpgrades" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container"]
+[node name="PlayerUpgrades" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container" unique_id=1513140403]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4723,7 +4707,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 
-[node name="PerkGrid" type="GridContainer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades"]
+[node name="PerkGrid" type="GridContainer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades" unique_id=1696902663]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4734,7 +4718,7 @@ theme_override_constants/h_separation = 40
 theme_override_constants/v_separation = 20
 columns = 2
 
-[node name="Perk_1" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid"]
+[node name="Perk_1" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid" unique_id=581810029]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -4742,7 +4726,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("71_5cld6")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_1"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_1" unique_id=573515012]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -4751,7 +4735,7 @@ offset_bottom = 65.0
 texture = ExtResource("49_5cld6")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_1"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_1" unique_id=1112458587]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -4760,7 +4744,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_1"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_1"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_1" unique_id=92714845]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -4769,7 +4753,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(0, 0.588235, 0.152941, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_1/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_1/ColorRect" unique_id=300458046]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4782,7 +4766,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_1/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_1/ColorRect" unique_id=1371947895]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -4794,7 +4778,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("71_5cld6")
 
-[node name="Perk_2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid"]
+[node name="Perk_2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid" unique_id=1613658656]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -4802,7 +4786,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("72_o736f")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_2"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_2" unique_id=446475595]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -4811,7 +4795,7 @@ offset_bottom = 65.0
 texture = ExtResource("52_hseb1")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_2"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_2" unique_id=517936794]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -4820,7 +4804,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_2"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_2"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_2" unique_id=1356897616]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -4829,7 +4813,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_2/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_2/ColorRect" unique_id=644044294]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4841,7 +4825,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_2/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_2/ColorRect" unique_id=563006736]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -4853,7 +4837,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("72_o736f")
 
-[node name="Perk_3" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid"]
+[node name="Perk_3" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid" unique_id=2122504227]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -4861,7 +4845,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("70_6hq81")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_3"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_3" unique_id=1291210336]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -4870,7 +4854,7 @@ offset_bottom = 65.0
 texture = ExtResource("54_vinow")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_3"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_3" unique_id=1668323446]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -4879,7 +4863,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_3"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_3"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_3" unique_id=542557439]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -4888,7 +4872,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_3/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_3/ColorRect" unique_id=503177910]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4900,7 +4884,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_3/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PlayerUpgrades/PerkGrid/Perk_3/ColorRect" unique_id=1408743882]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -4912,7 +4896,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("70_6hq81")
 
-[node name="KnifeUpgrades" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container"]
+[node name="KnifeUpgrades" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container" unique_id=607606707]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -4924,7 +4908,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 
-[node name="PerkGrid" type="GridContainer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades"]
+[node name="PerkGrid" type="GridContainer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades" unique_id=215330100]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4935,7 +4919,7 @@ theme_override_constants/h_separation = 40
 theme_override_constants/v_separation = 20
 columns = 2
 
-[node name="Perk_1" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid"]
+[node name="Perk_1" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid" unique_id=860658220]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -4943,7 +4927,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("74_4grkl")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_1"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_1" unique_id=263819105]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -4952,7 +4936,7 @@ offset_bottom = 65.0
 texture = ExtResource("56_awsf5")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_1"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_1" unique_id=1002876728]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -4961,7 +4945,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_4"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_1"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_1" unique_id=2094102931]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -4970,7 +4954,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_1/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_1/ColorRect" unique_id=616509675]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -4982,7 +4966,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_1/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_1/ColorRect" unique_id=644995870]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -4994,7 +4978,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("74_4grkl")
 
-[node name="Perk_2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid"]
+[node name="Perk_2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid" unique_id=139784099]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -5002,7 +4986,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("75_6yrdb")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_2"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_2" unique_id=1742189085]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -5011,7 +4995,7 @@ offset_bottom = 65.0
 texture = ExtResource("58_v84ne")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_2"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_2" unique_id=1125943533]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -5020,7 +5004,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_5"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_2"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_2" unique_id=369200955]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -5029,7 +5013,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_2/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_2/ColorRect" unique_id=914006211]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5041,7 +5025,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_2/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_2/ColorRect" unique_id=964183429]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -5053,7 +5037,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("75_6yrdb")
 
-[node name="Perk_3" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid"]
+[node name="Perk_3" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid" unique_id=1590287935]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -5061,7 +5045,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("73_ketbw")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_3"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_3" unique_id=1794090416]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -5070,7 +5054,7 @@ offset_bottom = 65.0
 texture = ExtResource("60_4pcjl")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_3"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_3" unique_id=1635771010]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -5079,7 +5063,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_6"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_3"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_3" unique_id=614706271]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -5088,7 +5072,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_3/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_3/ColorRect" unique_id=1892243981]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5100,7 +5084,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_3/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/KnifeUpgrades/PerkGrid/Perk_3/ColorRect" unique_id=1012523563]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -5112,7 +5096,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("73_ketbw")
 
-[node name="PistolUpgrades" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container"]
+[node name="PistolUpgrades" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container" unique_id=466161065]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -5124,7 +5108,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 
-[node name="PerkGrid" type="GridContainer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades"]
+[node name="PerkGrid" type="GridContainer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades" unique_id=1907747976]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5135,7 +5119,7 @@ theme_override_constants/h_separation = 40
 theme_override_constants/v_separation = 20
 columns = 2
 
-[node name="Perk_1" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid"]
+[node name="Perk_1" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid" unique_id=1569097524]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -5143,7 +5127,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("81_mpfyg")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_1"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_1" unique_id=169888460]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -5152,7 +5136,7 @@ offset_bottom = 65.0
 texture = ExtResource("62_3ath1")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_1"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_1" unique_id=1021510131]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -5161,7 +5145,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_7"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_1"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_1" unique_id=639792160]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -5170,7 +5154,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_1/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_1/ColorRect" unique_id=603080569]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5182,7 +5166,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_1/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_1/ColorRect" unique_id=1894869925]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -5194,7 +5178,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("81_mpfyg")
 
-[node name="Perk_2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid"]
+[node name="Perk_2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid" unique_id=1255013016]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -5202,7 +5186,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("80_hcgbs")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_2"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_2" unique_id=1182998948]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -5212,7 +5196,7 @@ scale = Vector2(0.994009, 1)
 texture = ExtResource("64_pgf6i")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_2"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_2" unique_id=1673003217]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -5221,7 +5205,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_8"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_2"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_2" unique_id=1625024970]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -5230,7 +5214,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_2/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_2/ColorRect" unique_id=954626358]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5242,7 +5226,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_2/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_2/ColorRect" unique_id=687189278]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -5254,7 +5238,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("80_hcgbs")
 
-[node name="Perk_3" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid"]
+[node name="Perk_3" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid" unique_id=1231665037]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -5262,7 +5246,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("79_ts2c8")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_3"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_3" unique_id=1034526940]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -5271,7 +5255,7 @@ offset_bottom = 65.0
 texture = ExtResource("66_bvt37")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_3"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_3" unique_id=839118268]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -5280,7 +5264,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_9"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_3"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_3" unique_id=1750245756]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -5289,7 +5273,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_3/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_3/ColorRect" unique_id=584768922]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5301,7 +5285,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_3/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/PistolUpgrades/PerkGrid/Perk_3/ColorRect" unique_id=1112799595]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -5313,7 +5297,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("79_ts2c8")
 
-[node name="M16Upgrades" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container"]
+[node name="M16Upgrades" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container" unique_id=1441298921]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -5325,7 +5309,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 
-[node name="PerkGrid" type="GridContainer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades"]
+[node name="PerkGrid" type="GridContainer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades" unique_id=1789074636]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5336,7 +5320,7 @@ theme_override_constants/h_separation = 40
 theme_override_constants/v_separation = 20
 columns = 2
 
-[node name="Perk_1" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid"]
+[node name="Perk_1" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid" unique_id=1911867462]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -5344,7 +5328,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("77_isbcs")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_1"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_1" unique_id=2032593066]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -5353,7 +5337,7 @@ offset_bottom = 65.0
 texture = ExtResource("68_kt3hj")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_1"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_1" unique_id=1938656993]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -5362,7 +5346,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_10"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_1"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_1" unique_id=879247660]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -5371,7 +5355,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_1/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_1/ColorRect" unique_id=2114323061]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5383,7 +5367,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_1/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_1/ColorRect" unique_id=1870944703]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -5395,7 +5379,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("77_isbcs")
 
-[node name="Perk_2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid"]
+[node name="Perk_2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid" unique_id=153905497]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -5403,7 +5387,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("76_ue0p1")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_2"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_2" unique_id=181146007]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -5413,7 +5397,7 @@ scale = Vector2(0.994009, 1)
 texture = ExtResource("70_2jrev")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_2"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_2" unique_id=351925540]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -5422,7 +5406,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_11"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_2"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_2" unique_id=1039801697]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -5431,7 +5415,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_2/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_2/ColorRect" unique_id=828441380]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5443,7 +5427,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_2/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_2/ColorRect" unique_id=1493805704]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -5455,7 +5439,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("76_ue0p1")
 
-[node name="Perk_3" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid"]
+[node name="Perk_3" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid" unique_id=2127745934]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -5463,7 +5447,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("78_142e3")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_3"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_3" unique_id=1592406990]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -5472,7 +5456,7 @@ offset_bottom = 65.0
 texture = ExtResource("72_5j7nw")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_3"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_3" unique_id=1469148025]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -5481,7 +5465,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_12"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_3"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_3" unique_id=646540532]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -5490,7 +5474,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_3/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_3/ColorRect" unique_id=39126026]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5502,7 +5486,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_3/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/M16Upgrades/PerkGrid/Perk_3/ColorRect" unique_id=99866720]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -5514,7 +5498,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("78_142e3")
 
-[node name="ShotgunUpgrades" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container"]
+[node name="ShotgunUpgrades" type="Control" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container" unique_id=1871552140]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -5526,7 +5510,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 
-[node name="PerkGrid" type="GridContainer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades"]
+[node name="PerkGrid" type="GridContainer" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades" unique_id=379130340]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5537,7 +5521,7 @@ theme_override_constants/h_separation = 40
 theme_override_constants/v_separation = 20
 columns = 2
 
-[node name="Perk_1" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid"]
+[node name="Perk_1" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid" unique_id=192906419]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -5545,7 +5529,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("84_0y64g")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_1"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_1" unique_id=85263409]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -5554,7 +5538,7 @@ offset_bottom = 65.0
 texture = ExtResource("74_mrkcr")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_1"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_1" unique_id=1276747192]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -5563,7 +5547,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_13"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_1"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_1" unique_id=822390520]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -5572,7 +5556,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_1/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_1/ColorRect" unique_id=695249931]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5584,7 +5568,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_1/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_1/ColorRect" unique_id=1623433267]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -5596,7 +5580,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("84_0y64g")
 
-[node name="Perk_2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid"]
+[node name="Perk_2" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid" unique_id=1445008613]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -5604,7 +5588,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("83_aclic")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_2"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_2" unique_id=1321097990]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -5614,7 +5598,7 @@ scale = Vector2(0.994009, 1)
 texture = ExtResource("76_78kn1")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_2"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_2" unique_id=1229767637]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -5623,7 +5607,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_14"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_2"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_2" unique_id=370953059]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -5632,7 +5616,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_2/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_2/ColorRect" unique_id=2094219707]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5644,7 +5628,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_2/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_2/ColorRect" unique_id=1030999209]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -5656,7 +5640,7 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("83_aclic")
 
-[node name="Perk_3" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid"]
+[node name="Perk_3" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid" unique_id=1416664927]
 custom_minimum_size = Vector2(250, 75)
 layout_mode = 2
 mouse_filter = 1
@@ -5664,7 +5648,7 @@ color = Color(0, 0, 0, 0.611765)
 script = ExtResource("50_vinow")
 perk = ExtResource("82_un823")
 
-[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_3"]
+[node name="PerkIcon" type="TextureRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_3" unique_id=113755064]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 10.0
@@ -5674,7 +5658,7 @@ scale = Vector2(1.00186, 1)
 texture = ExtResource("78_nwtn4")
 expand_mode = 1
 
-[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_3"]
+[node name="PerkName" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_3" unique_id=569369261]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 10.0
@@ -5683,7 +5667,7 @@ offset_bottom = 36.0
 text = "PERK_NAME_15"
 label_settings = SubResource("LabelSettings_o736f")
 
-[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_3"]
+[node name="ColorRect" type="ColorRect" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_3" unique_id=1782260175]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 36.0
@@ -5692,7 +5676,7 @@ offset_bottom = 61.0
 mouse_filter = 1
 color = Color(1.75677e-06, 0.589331, 0.153648, 1)
 
-[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_3/ColorRect"]
+[node name="PerkPrice" type="Label" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_3/ColorRect" unique_id=86728610]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -5704,7 +5688,7 @@ label_settings = SubResource("LabelSettings_ketbw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_3/ColorRect"]
+[node name="BuyButton" type="Button" parent="CameraRoot/Camera3D/PlayerUILayer/ShopMenu/ShopColor/Container/ShotgunUpgrades/PerkGrid/Perk_3/ColorRect" unique_id=1116901006]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -5716,19 +5700,19 @@ grow_vertical = 2
 script = ExtResource("50_o736f")
 perk = ExtResource("82_un823")
 
-[node name="SettingsMenu" parent="CameraRoot/Camera3D/PlayerUILayer" node_paths=PackedStringArray("menu") instance=ExtResource("49_f5f5t")]
+[node name="SettingsMenu" parent="CameraRoot/Camera3D/PlayerUILayer" unique_id=1282880976 node_paths=PackedStringArray("menu") instance=ExtResource("49_f5f5t")]
 menu = NodePath("../PauseMenu")
 
-[node name="SenseSlider" parent="CameraRoot/Camera3D/PlayerUILayer/SettingsMenu/ColorRect2/ColorRect/GamePage/SenseLabel" index="0"]
-value = 0.0
+[node name="SenseSlider" parent="CameraRoot/Camera3D/PlayerUILayer/SettingsMenu/ColorRect2/ColorRect/GamePage/SenseLabel" parent_id_path=PackedInt32Array(1282880976, 1892901132) index="0" unique_id=206770072]
+value = 0.2
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=696054325]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 visible = false
 cast_shadow = 0
 mesh = SubResource("CapsuleMesh_508ok")
 
-[node name="CharacterMover" parent="." node_paths=PackedStringArray("player_jump_sounds", "camera_root", "camera_3d", "frozen_indicator", "indicator_animation_player") instance=ExtResource("2_xxgcw")]
+[node name="CharacterMover" parent="." unique_id=1936383373 node_paths=PackedStringArray("player_jump_sounds", "camera_root", "camera_3d", "frozen_indicator", "indicator_animation_player") instance=ExtResource("2_xxgcw")]
 move_accel = 8.0
 player_jump_sounds = NodePath("../PlayerJumpSounds")
 camera_root = NodePath("../CameraRoot")
@@ -5736,117 +5720,117 @@ camera_3d = NodePath("../CameraRoot/Camera3D")
 frozen_indicator = NodePath("../CameraRoot/Camera3D/PlayerUILayer/StatsDisplay/FrozenIndicator")
 indicator_animation_player = NodePath("../CameraRoot/Camera3D/PlayerUILayer/StatsDisplay/FrozenIndicator/IndicatorAnimationPlayer")
 
-[node name="StepTracker" type="Node3D" parent="CharacterMover"]
+[node name="StepTracker" type="Node3D" parent="CharacterMover" unique_id=70390013]
 script = ExtResource("26_nv4vc")
 
-[node name="StepSounds" type="Node3D" parent="CharacterMover/StepTracker"]
+[node name="StepSounds" type="Node3D" parent="CharacterMover/StepTracker" unique_id=1140856290]
 script = ExtResource("8_0gysh")
 
-[node name="Concrete1" type="AudioStreamPlayer" parent="CharacterMover/StepTracker/StepSounds"]
+[node name="Concrete1" type="AudioStreamPlayer" parent="CharacterMover/StepTracker/StepSounds" unique_id=1505352911]
 stream = ExtResource("27_8gxox")
 bus = &"PlayerSounds"
 
-[node name="Concrete3" type="AudioStreamPlayer" parent="CharacterMover/StepTracker/StepSounds"]
+[node name="Concrete3" type="AudioStreamPlayer" parent="CharacterMover/StepTracker/StepSounds" unique_id=699824605]
 stream = ExtResource("27_8gxox")
 pitch_scale = 1.16
 bus = &"PlayerSounds"
 
-[node name="Concrete4" type="AudioStreamPlayer" parent="CharacterMover/StepTracker/StepSounds"]
+[node name="Concrete4" type="AudioStreamPlayer" parent="CharacterMover/StepTracker/StepSounds" unique_id=533755020]
 stream = ExtResource("27_8gxox")
 pitch_scale = 0.84
 bus = &"PlayerSounds"
 
-[node name="Concrete2" type="AudioStreamPlayer" parent="CharacterMover/StepTracker/StepSounds"]
+[node name="Concrete2" type="AudioStreamPlayer" parent="CharacterMover/StepTracker/StepSounds" unique_id=395586591]
 stream = ExtResource("28_11gg7")
 bus = &"PlayerSounds"
 
-[node name="PlayerJump" type="AudioStreamPlayer" parent="CharacterMover"]
+[node name="PlayerJump" type="AudioStreamPlayer" parent="CharacterMover" unique_id=420444857]
 stream = SubResource("AudioStreamMP3_n1x1j")
 bus = &"PlayerSounds"
 
-[node name="HealthManager" parent="." instance=ExtResource("3_exd8k")]
+[node name="HealthManager" parent="." unique_id=1686797043 instance=ExtResource("3_exd8k")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03104, 0)
 
-[node name="PickupManager" type="Area3D" parent="."]
+[node name="PickupManager" type="Area3D" parent="." unique_id=2135013118]
 collision_layer = 0
 collision_mask = 16
 monitorable = false
 script = ExtResource("20_l6n3p")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="PickupManager"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PickupManager" unique_id=1958667635]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_olqyp")
 
-[node name="PickupMedkit" type="AudioStreamPlayer" parent="PickupManager"]
+[node name="PickupMedkit" type="AudioStreamPlayer" parent="PickupManager" unique_id=740089031]
 stream = ExtResource("22_bi64h")
 bus = &"PlayerSounds"
 
-[node name="PickupAmmo" type="AudioStreamPlayer" parent="PickupManager"]
+[node name="PickupAmmo" type="AudioStreamPlayer" parent="PickupManager" unique_id=94270776]
 stream = ExtResource("23_2ijsl")
 bus = &"PlayerSounds"
 
-[node name="PlayerDeath" type="AudioStreamPlayer" parent="."]
+[node name="PlayerDeath" type="AudioStreamPlayer" parent="." unique_id=905449288]
 stream = ExtResource("37_sbwqj")
 bus = &"PlayerSounds"
 
-[node name="PlayerJumpSounds" type="Node3D" parent="."]
+[node name="PlayerJumpSounds" type="Node3D" parent="." unique_id=846179492]
 transform = Transform3D(0.0658098, 0, 0, 0, 0.0658098, 0, 0, 0, 0.0658098, 0, 0, 0)
 script = ExtResource("8_0gysh")
 
-[node name="PlayerJump_1" type="AudioStreamPlayer" parent="PlayerJumpSounds"]
+[node name="PlayerJump_1" type="AudioStreamPlayer" parent="PlayerJumpSounds" unique_id=1115122092]
 stream = ExtResource("29_qpa8y")
 bus = &"PlayerSounds"
 
-[node name="PlayerJump_2" type="AudioStreamPlayer" parent="PlayerJumpSounds"]
+[node name="PlayerJump_2" type="AudioStreamPlayer" parent="PlayerJumpSounds" unique_id=141996574]
 stream = SubResource("AudioStreamMP3_n1x1j")
 pitch_scale = 0.8
 bus = &"PlayerSounds"
 
-[node name="PlayerJump_3" type="AudioStreamPlayer" parent="PlayerJumpSounds"]
+[node name="PlayerJump_3" type="AudioStreamPlayer" parent="PlayerJumpSounds" unique_id=1648869055]
 stream = SubResource("AudioStreamMP3_n1x1j")
 pitch_scale = 1.2
 bus = &"PlayerSounds"
 
-[node name="PlayerPhrasesSounds" type="Node3D" parent="."]
+[node name="PlayerPhrasesSounds" type="Node3D" parent="." unique_id=965569666]
 script = ExtResource("8_0gysh")
 
-[node name="PlayerJump_1" type="AudioStreamPlayer" parent="PlayerPhrasesSounds"]
+[node name="PlayerJump_1" type="AudioStreamPlayer" parent="PlayerPhrasesSounds" unique_id=102764384]
 stream = ExtResource("58_nuaet")
 bus = &"PlayerSounds"
 
-[node name="PlayerJump_2" type="AudioStreamPlayer" parent="PlayerPhrasesSounds"]
+[node name="PlayerJump_2" type="AudioStreamPlayer" parent="PlayerPhrasesSounds" unique_id=157074300]
 stream = ExtResource("59_bqbau")
 bus = &"PlayerSounds"
 
-[node name="PlayerJump_3" type="AudioStreamPlayer" parent="PlayerPhrasesSounds"]
+[node name="PlayerJump_3" type="AudioStreamPlayer" parent="PlayerPhrasesSounds" unique_id=1964752729]
 stream = ExtResource("60_f5f5t")
 bus = &"PlayerSounds"
 
-[node name="PlayerJump_4" type="AudioStreamPlayer" parent="PlayerPhrasesSounds"]
+[node name="PlayerJump_4" type="AudioStreamPlayer" parent="PlayerPhrasesSounds" unique_id=1430128387]
 stream = ExtResource("61_qvbpb")
 bus = &"PlayerSounds"
 
-[node name="PlayerJump_5" type="AudioStreamPlayer" parent="PlayerPhrasesSounds"]
+[node name="PlayerJump_5" type="AudioStreamPlayer" parent="PlayerPhrasesSounds" unique_id=1131237504]
 stream = ExtResource("62_sscpr")
 bus = &"PlayerSounds"
 
-[node name="PlayerHurtSounds" type="Node3D" parent="."]
+[node name="PlayerHurtSounds" type="Node3D" parent="." unique_id=382849641]
 script = ExtResource("8_0gysh")
 
-[node name="HurtSound_1" type="AudioStreamPlayer" parent="PlayerHurtSounds"]
+[node name="HurtSound_1" type="AudioStreamPlayer" parent="PlayerHurtSounds" unique_id=2071338241]
 stream = ExtResource("58_n1x1j")
 bus = &"PlayerSounds"
 
-[node name="HurtSound_2" type="AudioStreamPlayer" parent="PlayerHurtSounds"]
+[node name="HurtSound_2" type="AudioStreamPlayer" parent="PlayerHurtSounds" unique_id=1586877664]
 stream = ExtResource("59_c8b32")
 bus = &"PlayerSounds"
 
-[node name="HurtSound_3" type="AudioStreamPlayer" parent="PlayerHurtSounds"]
+[node name="HurtSound_3" type="AudioStreamPlayer" parent="PlayerHurtSounds" unique_id=1773181916]
 stream = ExtResource("60_nj1g2")
 bus = &"PlayerSounds"
 
-[node name="PerkManager" type="Node" parent="."]
+[node name="PerkManager" type="Node" parent="." unique_id=864117652]
 unique_name_in_owner = true
 script = ExtResource("68_qvbpb")
 all_perks = Array[ExtResource("69_w4w4b")]([ExtResource("70_6hq81"), ExtResource("71_5cld6"), ExtResource("72_o736f"), ExtResource("73_ketbw"), ExtResource("74_4grkl"), ExtResource("75_6yrdb"), ExtResource("76_ue0p1"), ExtResource("77_isbcs"), ExtResource("78_142e3"), ExtResource("79_ts2c8"), ExtResource("80_hcgbs"), ExtResource("81_mpfyg"), ExtResource("82_un823"), ExtResource("83_aclic"), ExtResource("84_0y64g")])

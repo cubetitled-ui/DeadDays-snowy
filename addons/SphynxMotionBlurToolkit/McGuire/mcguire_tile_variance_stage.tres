@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="ShaderStageResource" load_steps=3 format=3 uid="uid://d1ckx52l74p0"]
+[gd_resource type="Resource" script_class="ShaderStageResource" format=3 uid="uid://d1ckx52l74p0"]
 
-[ext_resource type="Script" path="res://addons/SphynxMotionBlurToolkit/BaseClasses/shader_pass_resource.gd" id="1_bipj1"]
-[ext_resource type="RDShaderFile" uid="uid://ddo60n85uqwbk" path="res://addons/SphynxMotionBlurToolkit/McGuire/ShaderFiles/mcguire_tile_variance.glsl" id="2_5lusy"]
+[ext_resource type="Script" uid="uid://dj7c248uheoal" path="res://addons/SphynxMotionBlurToolkit/BaseClasses/shader_pass_resource.gd" id="1_bipj1"]
+[ext_resource type="RDShaderFile" uid="uid://tt8ve1ex5jlp" path="res://addons/SphynxMotionBlurToolkit/McGuire/ShaderFiles/mcguire_tile_variance.glsl" id="2_5lusy"]
 
 [resource]
 script = ExtResource("1_bipj1")

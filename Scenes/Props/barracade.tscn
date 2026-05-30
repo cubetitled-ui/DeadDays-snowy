@@ -1,5 +1,5 @@
-[gd_scene load_steps=2 format=3 uid="uid://br1shyfj6vk53"]
+[gd_scene format=3 uid="uid://br1shyfj6vk53"]
 
-[ext_resource type="PackedScene" uid="uid://cn4bphj1vvxbg" path="res://Models/barracade.glb" id="1_cg0r6"]
+[ext_resource type="PackedScene" uid="uid://bxdvm7a4t5lt1" path="res://Models/barracade.glb" id="1_cg0r6"]
 
-[node name="barracade" instance=ExtResource("1_cg0r6")]
+[node name="barracade" unique_id=11712462 instance=ExtResource("1_cg0r6")]

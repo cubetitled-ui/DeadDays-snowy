@@ -1,8 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://bfl5r4owdax8c"]
+[gd_scene format=3 uid="uid://bfl5r4owdax8c"]
 
-[ext_resource type="Texture2D" uid="uid://cv55v22gwkiw4" path="res://Textures/smoke_texture.png" id="1_mq2ah"]
+[ext_resource type="Texture2D" uid="uid://ckeh1rgbowc6r" path="res://Textures/smoke_texture.png" id="1_mq2ah"]
 [ext_resource type="Script" uid="uid://bntrpxckojg1r" path="res://Scripts/bullet_hit_effect.gd" id="1_qb6ji"]
-[ext_resource type="Texture2D" uid="uid://dtd315sv28lro" path="res://Textures/circle32.png" id="2_qb6ji"]
+[ext_resource type="Texture2D" uid="uid://b6f1s4gjvg0a6" path="res://Textures/circle32.png" id="2_qb6ji"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nj46w"]
 transparency = 1
@@ -63,26 +63,25 @@ bottom_radius = 0.0
 height = 1.035
 radial_segments = 4
 
-[node name="BulletHitEffect" type="Node3D"]
+[node name="BulletHitEffect" type="Node3D" unique_id=71124968]
 
-[node name="Smoke" type="GPUParticles3D" parent="."]
+[node name="Smoke" type="GPUParticles3D" parent="." unique_id=1705014530]
 material_override = SubResource("StandardMaterial3D_nj46w")
 cast_shadow = 0
-emitting = false
 amount = 1
 lifetime = 1.41
 one_shot = true
 process_material = SubResource("ParticleProcessMaterial_d52pp")
 draw_pass_1 = SubResource("PlaneMesh_0moal")
 
-[node name="Decal" type="Decal" parent="."]
+[node name="Decal" type="Decal" parent="." unique_id=2005412136]
 transform = Transform3D(1.10785, 1.80057e-05, -7.87052e-13, 1.5741e-12, -4.84258e-08, 1.10785, 1.80057e-05, -1.10785, -4.84258e-08, 0, 0, 0)
 size = Vector3(1, 1, 1)
 texture_albedo = ExtResource("2_qb6ji")
 modulate = Color(0.230315, 0.230315, 0.230315, 1)
 script = ExtResource("1_qb6ji")
 
-[node name="Debris" type="GPUParticles3D" parent="."]
+[node name="Debris" type="GPUParticles3D" parent="." unique_id=391221911]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.176754, 0.273141)
 layers = 4
 emitting = false

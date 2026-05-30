@@ -1,10 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://cnxuy6xiu7fnj"]
+[gd_scene format=3 uid="uid://cnxuy6xiu7fnj"]
 
 [ext_resource type="Script" uid="uid://c8deo3d2l8yxi" path="res://Scripts/gib.gd" id="1_2lfas"]
-[ext_resource type="PackedScene" uid="uid://cjws08foq8dh4" path="res://Models/gib/gib1.glb" id="2_t3524"]
-[ext_resource type="PackedScene" uid="uid://dflhbgpqonubx" path="res://Models/gib/gib2.glb" id="3_ri4se"]
-[ext_resource type="AudioStream" uid="uid://btitf4hjuav41" path="res://SFX/gib_destroy_sound.mp3" id="4_t3524"]
-[ext_resource type="AudioStream" uid="uid://dtgwp1ol2jj0" path="res://SFX/gib_sound.mp3" id="5_ri4se"]
+[ext_resource type="PackedScene" uid="uid://d246wsfwb7b85" path="res://Models/gib/gib1.glb" id="2_t3524"]
+[ext_resource type="PackedScene" uid="uid://b5lq1l4ecg4xk" path="res://Models/gib/gib2.glb" id="3_ri4se"]
+[ext_resource type="AudioStream" uid="uid://yxota7673w7h" path="res://SFX/gib_destroy_sound.mp3" id="4_t3524"]
+[ext_resource type="AudioStream" uid="uid://dmoi8vhrc3d8g" path="res://SFX/gib_sound.mp3" id="5_ri4se"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_nw3m8"]
 radius = 0.18
@@ -42,40 +42,40 @@ alpha_curve = SubResource("CurveTexture_ddf6w")
 [sub_resource type="QuadMesh" id="QuadMesh_ipqr2"]
 size = Vector2(0.2, 0.2)
 
-[node name="Gib" type="CharacterBody3D"]
+[node name="Gib" type="CharacterBody3D" unique_id=1992130758]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 collision_layer = 68
 script = ExtResource("1_2lfas")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1531286920]
 shape = SubResource("SphereShape3D_nw3m8")
 
-[node name="Graphics" type="Node3D" parent="."]
+[node name="Graphics" type="Node3D" parent="." unique_id=525755519]
 transform = Transform3D(1.21788, 0, 0, 0, 1.21788, 0, 0, 0, 1.21788, -0.0222861, 0, 0)
 
-[node name="gib1" parent="Graphics" instance=ExtResource("2_t3524")]
+[node name="gib1" parent="Graphics" unique_id=754372957 instance=ExtResource("2_t3524")]
 transform = Transform3D(0.196915, 0, 0, 0, 0.196915, 0, 0, 0, 0.196915, 0, 0, 0)
 visible = false
 
-[node name="Gib1" parent="Graphics/gib1" index="0"]
+[node name="Gib1" parent="Graphics/gib1" index="0" unique_id=1782218942]
 layers = 4
 
-[node name="gib2" parent="Graphics" instance=ExtResource("3_ri4se")]
+[node name="gib2" parent="Graphics" unique_id=1477757911 instance=ExtResource("3_ri4se")]
 transform = Transform3D(0.313461, 0, 0, 0, 0.313461, 0, 0, 0, 0.313461, 0, 0, 0)
 visible = false
 
-[node name="Gib2" parent="Graphics/gib2" index="0"]
+[node name="Gib2" parent="Graphics/gib2" index="0" unique_id=1454759422]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00443988, -2.53533e-08, -0.00796136)
 layers = 4
 
-[node name="gib3" parent="Graphics" instance=ExtResource("3_ri4se")]
+[node name="gib3" parent="Graphics" unique_id=1689049671 instance=ExtResource("3_ri4se")]
 transform = Transform3D(-1.37018e-08, 0, -0.313461, 0, 0.313461, 0, 0.313461, 0, -1.37018e-08, 0, 0, 0)
 visible = false
 
-[node name="Gib2" parent="Graphics/gib3" index="0"]
+[node name="Gib2" parent="Graphics/gib3" index="0" unique_id=1454759422]
 layers = 4
 
-[node name="BloodParticles" type="GPUParticles3D" parent="."]
+[node name="BloodParticles" type="GPUParticles3D" parent="." unique_id=1776027647]
 transform = Transform3D(0.000212352, -0.000182081, -0.196915, 3.43199e-05, 0.196915, -0.000182044, 0.196915, -3.41256e-05, 0.000212383, 0.00152746, 0, 0.000635877)
 material_override = SubResource("StandardMaterial3D_dw4n1")
 cast_shadow = 0
@@ -88,13 +88,13 @@ explosiveness = 1.0
 process_material = SubResource("ParticleProcessMaterial_ri4se")
 draw_pass_1 = SubResource("QuadMesh_ipqr2")
 
-[node name="GibSound" type="AudioStreamPlayer" parent="."]
+[node name="GibSound" type="AudioStreamPlayer" parent="." unique_id=1676260074]
 stream = ExtResource("4_t3524")
 volume_db = -2.0
 max_polyphony = 3
 bus = &"ZombieSounds"
 
-[node name="FirstGibSound" type="AudioStreamPlayer" parent="."]
+[node name="FirstGibSound" type="AudioStreamPlayer" parent="." unique_id=1370027540]
 stream = ExtResource("5_ri4se")
 volume_db = -2.0
 bus = &"ZombieSounds"
